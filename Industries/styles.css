@@ -1,0 +1,188 @@
+.industries{
+    margin-left: 10%;
+    margin-bottom: 150px;
+}
+
+.industries h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 120px;
+}
+.industries p{
+    border-left: 2px solid #debb6d;
+    border-right: 0px;
+    padding-left: 10px;
+    max-width: 480px;
+}
+
+.photos{
+    display: inline;
+}
+.photos .row{
+    display: flex;
+}
+.photos p:nth-child(1){
+    font-weight: normal;
+    color: #f6ca78;
+    filter: brightness(100%);
+    text-align: left;
+    font-size: 40px;
+}
+.photos p:nth-child(2){
+    color: white;
+    border-left: 2px solid #debb6d;
+    padding-left: 10px;
+    text-align: left;
+}
+.photos .one{
+    border: none;
+    border-width: 50%;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    align-content: center;
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos a{text-decoration: none;}
+.photos .one button{
+    max-width: 140%;
+}
+.photos .one:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .two{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(22.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .two:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .three{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(33.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .three:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .four{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(44.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .four:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .five{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(55.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .five:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .six{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(66.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .six:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .seven{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(77.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .seven:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
+.photos .eight{
+    border: none;
+    max-width: 50%;
+    height: 350px;
+    width: 50%;
+    background: url(88.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.photos .eight:hover{
+    transition: 0.6s;
+    opacity: 0.8;
+}
