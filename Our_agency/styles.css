@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+
+.our_agency{
+    margin-left: 8%;
+    margin-bottom: 150px;
+}
+.our_agency h1{
+    font-size: 60px;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 120px;
+    font-family: georgia,serif;
+    font-weight: 400;
+    opacity: 0.98;
+}
+.our_agency p{
+    border-left: 2px solid #f8a900;
+    border-right: 0px;
+    padding-left: 10px;
+    max-width: 480px;
+    font-family: "Century Gothic",sans-serif;
+    opacity: 0.4;
+}
+
+.media_banner{
+    width: 100%;
+}
+
+.text{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 10px;
+    width: 600px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text p:nth-child(1){
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: georgia,serif;
+}
+.text p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+    font-weight: 100;
+    font-size: 15;
+    opacity: 0.6;
+}
+
+.text a{
+    text-decoration: none;
+    color: #b97800;
+}
+
+.line{
+    border-top: 2px solid #f6ca78;
+    margin-bottom: 60px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.line p:nth-child(1){
+    font-size: 35px;
+    font-family: "Century Gothic",sans-serif;
+    color: #f6ca78;
+}
+.line p:nth-child(2){
+    font-style: italic;
+    font-weight: 300;
+    font-family: georgia,serif;
+    font-size: 22px;
+}
+
+.photo{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photo .one{
+    display: flex;
+}
+.photo .column{
+    display: flex;
+}
+.photo .row{
+    margin: 5px;
+}
+.photo .row img{
+    max-width: 100%;
+    max-height: 100%;
+}

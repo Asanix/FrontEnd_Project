@@ -3,6 +3,7 @@
   font-family: "Century Gothic",sans-serif;
   font-weight: 300;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .topnav {
@@ -18,7 +19,7 @@
   font-weight: 500;
 }
 
- #logo {
+#logo {
   margin: 0.60rem;
   float: left;
 }
@@ -33,6 +34,15 @@
   height: 780px;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 #desc video {
   position: absolute;
   top: 0;
@@ -44,12 +54,18 @@
   position: absolute;
   font-size: 40px;
   margin-left: 7.5%;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #desc h3 {
   position: absolute;
   width: 45%;
   margin-left: 7.5%;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #desc button {
@@ -60,25 +76,32 @@
   background-color: #e0bc75; 
   color: white;
   border-color: #e0bc75;
+  transition: 300ms;
+  border-style: solid;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-
+#desc button:hover {
+  background: none;
+  cursor: pointer;
+}
 
 #brand {
   display: flex;
   justify-content:space-between;
   width: 100%;
   margin-top: 2rem;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #brand p {
   color: black;
   padding: 0.65rem 0.75rem 0.75rem 0.75rem;
-  line-height: 2.1rem;
-}
-
-#brand span {
-  color: black;
+  line-height: 1.85rem;
 }
 
 #brand-desc {
@@ -86,9 +109,28 @@
   margin-left: 7.5%;
 }
 
+#brand-desc img{
+  margin-left: 2.5%;
+}
+
+#brand-desc button {
+  width: 25%;
+  margin-top: 1rem; 
+  height: 2.5rem; 
+  background-color: #e0bc75; 
+  border-color: #e0bc75;
+  border-style: solid;
+  color: white;
+  transition: 300ms;
+}
+
 #brand-image {
   width: 42.5%;
   margin-right: 7.5%;
+}
+
+#brand-image img{
+  width: 95%;
 }
 
 #andrew {
@@ -100,3 +142,169 @@
   padding: 0;
   margin: 0 0 0.5rem;
 }
+
+/* ========================== */
+
+#built {
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #333333;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#built p {
+  color: white;
+  padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+  line-height: 1.45rem;
+}
+
+#built-desc {
+  width: 42.5%;
+  margin-right: 7.5%;
+}
+
+#built-desc img{
+  margin-left: 2.5%;
+}
+
+#built-desc button {
+  width: 25%;
+  margin-top: 1rem; 
+  height: 2.5rem; 
+  background-color: #e0bc75; 
+  border-color: #e0bc75;
+  border-style: solid;
+  color: white;
+  transition: 300ms;
+}
+
+#built-image {
+  width: 42.5%;
+  margin-left: 7.5%;
+}
+
+#built-image img {
+  width: 95%;
+}
+
+#don {
+  width: 45%; 
+  padding-left: 2rem;
+}
+
+#don p {
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+
+/* ========================== */
+
+#exp {
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#exp p {
+  color: black;
+  padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+  line-height: 1.85rem;
+}
+
+#exp-desc {
+  width: 42.5%;
+  margin-left: 7.5%;
+}
+
+#exp-desc img{
+  margin-left: 2.5%;
+}
+
+#exp-desc button {
+  width: 25%;
+  margin-top: 1rem; 
+  height: 2.5rem; 
+  background-color: #e0bc75; 
+  border-color: #e0bc75;
+  border-style: solid;
+  color: white;
+  transition: 300ms;
+}
+
+#exp-image {
+  width: 42.5%;
+  margin-right: 7.5%;
+}
+
+#exp-image img {
+  width: 95%;
+}
+
+#homer {
+  width: 45%; 
+  padding-left: 2rem;
+}
+
+#homer p {
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+
+#number {
+  width: 100%;
+  margin-left: 4.5rem;
+  display: flex;
+  width: 90%;
+}
+
+#number h4{
+  font-size: 53px;
+  margin: 10px 0 20px;
+  width: 65%;
+  font-family: georgia,serif;
+  font-style: italic;
+}
+
+#number p {
+  width: 75%;
+}
+
+#number ul {
+  margin-right: 2rem;
+  list-style: none;
+}
+
+#numbersDesc {
+  width: 50%;
+}
+
+#fourPoints {
+  padding-top: 3rem;
+  display: flex;
+  width: 50%;
+}
+
+#fourPoints h2 {
+  font-size: 55px;
+  font-weight: bold;
+  color: #e0bc75;
+}
+
+#fourPoints p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#fourPoints li {
+  width: 20rem;
+}
+
