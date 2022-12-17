@@ -52,6 +52,18 @@
   margin-left: 7.5%;
 }
 
+#desc button {
+  position: absolute;
+  width: 25%;
+  margin-left: 7.5%;
+  top: 30rem; height: 2.5rem; 
+  background-color: #e0bc75; 
+  color: white;
+  border-color: #e0bc75;
+}
+
+
+
 #brand {
   display: flex;
   justify-content:space-between;
@@ -62,6 +74,7 @@
 #brand p {
   color: black;
   padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+  line-height: 2.1rem;
 }
 
 #brand span {
