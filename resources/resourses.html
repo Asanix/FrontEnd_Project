@@ -7,12 +7,16 @@
     <title>Resoures</title>
 </head>
 <style>
+*{
+    font-family:"Century Gothic",sans-serif;
+}
+
 .navbar{
     position: fixed;
     top: 0;
     background-color: white;
     width:100%;
-    height:85px;
+    height:5.313rem;
 }
 .navbar .container{
     height: inherit;
@@ -35,7 +39,7 @@
     font-weight: 700;
     opacity: 0.8;
     text-decoration: none;
-    padding:10px ;
+    padding:0.625rem;
 
 }
 .navbar-menu li a:hover{
@@ -50,13 +54,13 @@
     flex-flow:row nowrap;
 }
 .contact{
-    margin-left: 10px;
-    padding: 10px;
+    margin-left:0.625rem;
+    padding: 0.625rem;
     background-color:#e0bc75;
     color:#000;
     font-weight: 600;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 .first{
     margin: 8vw;
@@ -66,36 +70,75 @@
 }
 h1{
     -webkit-font-smoothing:auto;
-    font-family:Arial, Helvetica, sans-serif;
     font-style: italic;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-weight: 300;
     font-size: 10vh;
     text-transform: none;
     color:#333;
 }
-
 .subpage{
-    max-width: 600px;
+    max-width: 37.5rem;
     text-align: left;
-    padding-left: 20px;
-    border-left:2px solid #e0bc75;
+    padding-left: 1.25rem;
+    border-left:0.125rem solid #e0bc75;
     color:#adadad;
     font-size: 2.5vh;
 }
 .gold{
     border:solid #e0bc75;
-    border-width:1px;
+    border-width:0.063rem;
     height: 0;
 }
-.icon{
-    position: fixed;
-    bottom:80px;
-    left:20px;
+.cards{
+    display: flex;
+    justify-content:space-evenly;
+}
+.card{
+    margin: 0.313rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    width: 24rem;
+    height: 33rem;
+}
+.img1{
+    margin:0.625rem;
+    width:21rem;
+    height:30rem;
+    background-size:cover;
+}
+.img2{
+    margin:0.625rem;
+    width:21rem;
+    height: 30rem;
+    background-size:cover;
+}
+.img3{
+    margin:0.625rem;
+    width:21rem;
+    height: 30rem;
+    background-size:cover;
+}
+.btn{
+    background-color:#e0bc75;
+    color: white;
+    width: 21rem;
+    height:3rem;
+    font-weight: 300;
+}
+.btn:hover{
+    background-color: white;
+    color: #e0bc75;
+    font-weight: 300;
+
 }
 
 
 </style>
+
 <body>
 <header>
 <div class="navbar">
@@ -129,23 +172,32 @@ h1{
     </div>
     
     <div class="line"><hr class="gold"></div>
-
-    <div class="boxes">
     
+    <div class="cards">
+    <div class="card">
+        <img class="img1" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\Google-Ads_cover.jpg" alt="">
+        <button class="btn">DOWNLOAD CALCULATOR </button>
+    </div>
+    
+    <div class="card">
+        <img class="img2" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\must-haves-updated.jpg" alt="">
+        <button class="btn">DOWNLOAD NOW</button>
     </div>
 
-
-
-
-
-
-
-
+    <div class="card">
+        <img class="img3" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\digital-strategies.jpg" alt="">
+        <button class="btn"><a href="#"></a> DOWNLOAD NOW</button>
+    </div>
+    
+    </div>    
 
 
 
 </div>
-    
+
+
+
+
 
 
 
