@@ -1,20 +1,27 @@
+body{
+    margin: 0;
+}
 .industries{
-    margin-left: 10%;
+    margin-left: 8%;
     margin-bottom: 150px;
 }
 
 .industries h1{
     font-size: 60px;
-    font-weight: bold;
     font-style: italic;
     margin-bottom: 0px;
     margin-top: 120px;
+    font-family: georgia,serif;
+    font-weight: 400;
+    opacity: 0.98;
 }
 .industries p{
-    border-left: 2px solid #debb6d;
+    border-left: 2px solid #f8a900;
     border-right: 0px;
     padding-left: 10px;
     max-width: 480px;
+    font-family: "Century Gothic",sans-serif;
+    opacity: 0.4;
 }
 
 .photos{
@@ -29,160 +36,241 @@
     filter: brightness(100%);
     text-align: left;
     font-size: 40px;
+    margin-top: 165px;
+    font-family: "Century Gothic",sans-serif;
 }
 .photos p:nth-child(2){
     color: white;
     border-left: 2px solid #debb6d;
     padding-left: 10px;
     text-align: left;
+    margin-top: -30px;
+    font-family: "Century Gothic",sans-serif;
+}
+.photos button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 60px;
 }
 .photos .one{
     border: none;
-    border-width: 50%;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(11.jpg);
-    background-size: cover;
+    background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
-    align-content: center;
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
+}
+.photos .one::after{
+    
+  background: rgba(0,0,0,.5);
 }
 .photos a{text-decoration: none;}
-.photos .one button{
-    max-width: 140%;
-}
+
 .photos .one:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .two{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(22.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .two:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .three{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(33.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .three:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .four{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(44.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .four:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .five{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(55.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .five:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .six{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(66.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .six:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .seven{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(77.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .seven:hover{
-    transition: 0.6s;
     opacity: 0.8;
 }
 .photos .eight{
     border: none;
-    max-width: 50%;
     height: 350px;
     width: 50%;
     background: url(88.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
     margin: 5px;
     padding: 20px;
     cursor: pointer;
+    transition: 0.3s;
+    filter: brightness(80%);
 }
 .photos .eight:hover{
-    transition: 0.6s;
     opacity: 0.8;
+}
+
+.banner{
+    background: url(../banner.jpg);
+    height: 270px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    margin-top: -25px;
+}
+.banner p:nth-child(1){
+    font-size: 25px;
+    padding-top: 5%;
+    margin-bottom: -15px;
+}
+.banner p:nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+}
+.banner button{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border: 3px solid #f6ca78;
+    padding: 10px;
+    background-color: #f6ca78;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner button:hover{
+    background: none;
+    color: #f6ca78;
+}
+
+
+@media screen and (max-width: 980px) {
+    .photos .row{
+        display: inline-block;
+    }
+    .photos .row .one{
+        width: 100%;
+    }
+    .photos .two{
+        width: 100%;
+    }
+    .photos .three{
+        width: 100%;
+    }
+    .photos .four{
+        width: 100%;
+    }
+    .photos .five{
+        width: 100%;
+    }
+    .photos .six{
+        width: 100%;
+    }
+    .photos .seven{
+        width: 100%;
+    }
+    .photos .eight{
+        width: 100%;
+    }
+    .photos p:nth-child(1){
+        font-weight: normal;
+        color: #f6ca78;
+        filter: brightness(100%);
+        text-align: left;
+        font-size: 40px;
+    }
+    .photos p:nth-child(2){
+        color: white;
+        border-left: 2px solid #debb6d;
+        padding-left: 10px;
+        text-align: left;
+        margin-top: -30px;
+    }
 }
