@@ -30,7 +30,7 @@
 
 #desc {
   width: 100%;
-  height: 78px;
+  height: 780px;
 }
 
 #desc video {
@@ -43,7 +43,6 @@
 #desc h1 {
   position: absolute;
   font-size: 40px;
-  width: 45%;
   margin-left: 7.5%;
 }
 
@@ -51,4 +50,40 @@
   position: absolute;
   width: 45%;
   margin-left: 7.5%;
+}
+
+#brand {
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#brand p {
+  color: black;
+  padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+}
+
+#brand span {
+  color: black;
+}
+
+#brand-desc {
+  width: 42.5%;
+  margin-left: 7.5%;
+}
+
+#brand-image {
+  width: 42.5%;
+  margin-right: 7.5%;
+}
+
+#andrew {
+  width: 45%; 
+  padding-left: 2rem;
+}
+
+#andrew p {
+  padding: 0;
+  margin: 0 0 0.5rem;
 }
