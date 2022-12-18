@@ -441,3 +441,81 @@
   margin: 1vw 1vw 0 1vw;
   border-radius: 5px;
 }
+
+.banner{
+  background: url(../banner.jpg);
+  height: 270px;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  margin-top: -25px;
+}
+.banner p:nth-child(1){
+  font-size: 25px;
+  padding-top: 5%;
+  margin-bottom: -15px;
+}
+.banner p:nth-child(2){
+  font-size: 30px;
+  font-weight: bold;
+}
+.banner button{
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  border: 3px solid #f6ca78;
+  padding: 10px;
+  background-color: #f6ca78;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.banner button:hover{
+  background: none;
+  color: #f6ca78;
+}
+
+.last{
+  padding-top: 50px;
+  display: flex;
+  color: white;
+  border: 2px solid #333;
+  height: 400px;
+  background-color: #333;
+  font-family: "Century Gothic",sans-serif;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.last div:nth-child(1) img{
+  margin-bottom: 30px;
+}
+.last div{
+  width: 25%;
+}
+.last .grey{
+  opacity: 0.7;
+}
+.last a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.last .opa:hover{
+  opacity: 0.5;
+}
+.last .opa:focus{
+  color: rgb(114, 114, 250);
+}
+.last .logo{
+  display: flex;
+  margin-bottom: 30px;
+}
+.last .logo img{
+  width: 20px;
+  height: 25px;
+  margin-right: 20px;
+  margin-left: -2px;
+  cursor: pointer;
+}
