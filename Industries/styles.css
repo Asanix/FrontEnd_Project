@@ -1,6 +1,60 @@
-body{
-    margin: 0;
-}
+body {
+    margin: 0; 
+  }
+  
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    margin: 1.20rem 0.5rem;
+    padding: 0.6rem 0.9rem;
+    float: right;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;  
+    font-family: "Century Gothic",sans-serif;
+    font-weight: 300;
+    color: white;
+    scroll-behavior: smooth;
+    color: black;
+  }
+  
+  #logo {
+    margin: 0.60rem;
+    float: left;
+  }
+  
+  #contact {
+    background: #e0bc75;
+    margin-right: 1.4rem;
+  }
+  
+  .moovingLink {
+    background: 
+      linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+      linear-gradient(to right, #e0bc75, #e0bc75);
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: 400ms;
+  }
+  
+  .moovingLink:hover,
+  .moovingLink:focus {
+    color: #e0bc75;
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+  
+  #choosenLink {
+    background: 
+      linear-gradient(to right, #e0bc75, #e0bc75),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
 .industries{
     margin-left: 8%;
     margin-bottom: 150px;
