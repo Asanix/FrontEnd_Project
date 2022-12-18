@@ -19,6 +19,22 @@
   font-weight: 500;
 }
 
+.moovingLink {
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, #e0bc75, #e0bc75);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 400ms;
+}
+
+.moovingLink:hover,
+.moovingLink:focus {
+  color: #e0bc75;
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
 #logo {
   margin: 0.60rem;
   float: left;
