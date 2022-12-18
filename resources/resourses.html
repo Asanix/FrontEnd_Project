@@ -9,8 +9,8 @@
 <style>
 *{
     font-family:"Century Gothic",sans-serif;
+    margin: 0;
 }
-
 .navbar{
     position: fixed;
     top: 0;
@@ -23,6 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left:0.625rem;
+    padding-left: 0.375rem;
 }
 .navbar-menu li{
     list-style-type:none;
@@ -90,17 +92,17 @@ h1{
     border-width:0.063rem;
     height: 0;
 }
-.cards{
+.cards-f{
     display: flex;
     justify-content:space-evenly;
 }
-.card{
+.card-f{
     margin: 0.313rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border: 1px solid black;
+    border:0.063rem solid rgba(54, 54, 54, 0.356);
     width: 24rem;
     height: 33rem;
 }
@@ -122,20 +124,112 @@ h1{
     height: 30rem;
     background-size:cover;
 }
+.img4{
+    margin:0.625rem;
+    width:21rem;
+    height:30rem;
+    background-size:cover;
+}
+.img5{
+    margin:0.625rem;
+    width:21rem;
+    height:30rem;
+    background-size:cover;
+}
+.img6{
+    margin:0.625rem;
+    width:21rem;
+    height:30rem;
+    background-size:cover;
+}
+.img7{
+    margin:0.625rem;
+    width:21rem;
+    height:30rem;
+    background-size:cover;
+}
+
 .btn{
     background-color:#e0bc75;
     color: white;
     width: 21rem;
     height:3rem;
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: solid #e0bc75;
+    margin-bottom: 0.625rem;
 }
 .btn:hover{
     background-color: white;
     color: #e0bc75;
-    font-weight: 300;
-
+    font-weight: 600;
+    border-color:#e0bc75;
 }
 
+.cards-s{
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-s{
+    margin: 0.313rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border:0.063rem solid rgba(54, 54, 54, 0.356);
+    width: 24rem;
+    height: 33rem;
+}
+.cards-t{
+    margin-top: 1.875rem;
+    margin-left: 4.935rem;
+    display: flex;
+    justify-content:left;
+}
+.card-t{
+    margin:0.313rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: white;
+    border:0.063rem solid rgba(54, 54, 54, 0.356);
+    width: 24rem;
+    height: 33rem;
+}
+.subfooter{
+    position:relative;
+    text-align:center;
+    color:black;
+    width: 100%;
+    height: 400px;
+    padding: 75px 0;
+}
+.sub{
+    width: 100%;
+    height: 400px;
+}
+.text-c{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.67);
+
+}
+.submit{
+    height: 50px;
+    width: 400px;
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
 
 </style>
 
@@ -145,7 +239,7 @@ h1{
     
     <div class="container">
     
-        <img src="C:\Users\77084906517\OneDrive\Рабочий стол\project_part\resources\logo-dark.png" alt="">
+        <img src ="C:\Users\77084906517\OneDrive\Рабочий стол\project_part\resources\logo-dark.png" alt="">
         
         <div class="navbar-wrap">
             <ul class="navbar-menu">
@@ -173,27 +267,62 @@ h1{
     
     <div class="line"><hr class="gold"></div>
     
-    <div class="cards">
-    <div class="card">
+    <div class="cards-f">
+    <div class="card-f">
         <img class="img1" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\Google-Ads_cover.jpg" alt="">
-        <button class="btn">DOWNLOAD CALCULATOR </button>
+        <button class="btn" onclick="document.location ='https://mediaboom.com/google-ads-cost-calculator/'">DOWNLOAD CALCULATOR</button>
     </div>
     
-    <div class="card">
+    <div class="card-f">
         <img class="img2" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\must-haves-updated.jpg" alt="">
-        <button class="btn">DOWNLOAD NOW</button>
+        <button class="btn" onclick="document.location ='https://mediaboom.com/whitepaper-website-must-haves/'">DOWNLOAD NOW</button>
     </div>
 
-    <div class="card">
+    <div class="card-f">
         <img class="img3" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\digital-strategies.jpg" alt="">
-        <button class="btn"><a href="#"></a> DOWNLOAD NOW</button>
+        <button class="btn" onclick="document.location = 'https://mediaboom.com/digital-strategies/'">DOWNLOAD NOW</button>
     </div>
-    
-    </div>    
-
-
-
 </div>
+
+<div class="cards-s">
+    <div class="card-s">
+        <img class="img4" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\luxury-brand-target-audience.jpg" alt="">
+        <button class="btn" onclick="document.location = 'https://mediaboom.com/target-audience-luxury-brands/'">DOWNLOAD NOW</button>
+    </div>
+
+    <div class="card-s">
+        <img class="img5" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\12-Ways-to-Drive-Traffic_Cover.jpg" alt="">
+        <button class="btn" onclick="document.location = 'https://mediaboom.com/medspa-website/'">DOWNLOAD NOW</button>
+    </div>
+
+    <div class="card-s">
+        <img class="img6" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\private-equity.jpg" alt="">
+        <button class="btn" onclick="document.location = 'https://mediaboom.com/whitepaper-private-equity/'">DOWNLOAD NOW</button>
+    </div>
+</div>
+
+<div class="cards-t">
+    <div class="card-t">
+        <img class="img7" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\lead-strategies-4-1187x1536.jpg" alt="">
+        <button class="btn" onclick="document.location = 'https://mediaboom.com/website-optimization/'">GET MY FREE AUDIT</button>
+    </div>
+</div>    
+
+    <div class="subfooter">
+        <img class="sub" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\newsletter-bg.jpg" alt="...">
+        <div class="text-c">
+        <h2 style="font-style: italic;">Subscribe To Mediaboom's Newsletter</h2><br>
+            <p>Digital advertising never rests, and neither do we. Receive exclusive insights on <br> 
+                what’s new, what’s hot, and what’s challenging the rules in digital advertising and <br>
+                marketing so you’re always the first to know.</p><br>
+                <form id="form" method="post">
+                    <div class="input-control">
+                        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                    </div><br>
+                    <button class="submit" type="submit">RECEIVE INSIGHTS NOW</button>
+                </form>
+            </div>
+    </div>
 
 
 
