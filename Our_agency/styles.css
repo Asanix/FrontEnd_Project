@@ -25,14 +25,19 @@ body{
 }
 
 .media_banner{
+    background: url(Media_banner.jpg);
+    height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
+    background-size: auto;
 }
 
 .text{
     margin-top: 40px;
     margin-bottom: 70px;
     padding: 10px;
-    width: 600px;
+    width: 60%;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -93,4 +98,209 @@ body{
 .photo .row img{
     max-width: 100%;
     max-height: 100%;
+    pointer-events: none;
+}
+.photo .row .name{
+    margin-top: -80px;
+    font-size: 40px;
+    font-family: "Century Gothic",sans-serif;
+    color: #f6ca78;
+    margin-left: 15px;
+}
+.photo .row .job{
+    font-style: italic;
+    font-weight: 300;
+    font-family: georgia,serif;
+    font-size: 22px;
+    margin-top: -40px;
+    color: white;
+    margin-left: 15px;
+}
+.photos{
+    margin-top: 60px;
+    margin-left: 15%;
+    width: 70%;
+}
+.words{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.words div{
+    width: 40%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.words div p:nth-child(1){
+    font-style: italic;
+    font-weight: 300;
+    font-family: georgia,serif;
+    font-size: 20px;
+}
+.words div p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+    opacity: 0.8;    
+}
+.awards{
+    border-top: 2px solid #f6ca78;
+    width: 80%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.awards p:nth-child(1){
+    font-size: 35px;
+    font-family: "Century Gothic",sans-serif;
+    color: #f6ca78;
+}
+.awards p:nth-child(2){
+    font-style: italic;
+    font-weight: 300;
+    font-family: georgia,serif;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.awards div{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.awards div .first{
+    display: flex;
+}
+.awards div .second{
+    display: flex;
+}
+.awards div img{
+    width: 20%;
+}
+.awards button{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Century Gothic",sans-serif;
+    color: #be7c00;
+    border: 2px solid #be7c00;
+    padding: 10px 20px;
+    background: none;
+    cursor: pointer;
+}
+.banner{
+    background: url(../banner.jpg);
+    height: 270px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    margin-top: -25px;
+}
+.banner p:nth-child(1){
+    font-size: 25px;
+    padding-top: 5%;
+    margin-bottom: -15px;
+}
+.banner p:nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+}
+.banner button{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border: 3px solid #f6ca78;
+    padding: 10px;
+    background-color: #f6ca78;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner button:hover{
+    background: none;
+    color: #f6ca78;
+}
+.last{
+    padding-top: 50px;
+    display: flex;
+    color: white;
+    border: 2px solid #333;
+    height: 400px;
+    background-color: #333;
+    font-family: "Century Gothic",sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.last div:nth-child(1) img{
+    margin-bottom: 30px;
+}
+.last div{
+    width: 25%;
+}
+.last .grey{
+    opacity: 0.7;
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.last .opa:hover{
+    opacity: 0.5;
+}
+.last .opa:focus{
+    color: rgb(114, 114, 250);
+}
+.last .logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+.last .logo img{
+    width: 20px;
+    height: 25px;
+    margin-right: 20px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    .photo .one{
+        display: block;
+    }
+    .words{
+        display: inline;
+    }
+    .words div{
+        padding-right: 0px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo .row .name{
+        margin-top: -60px;
+        font-size: 20px;
+    }
+    .photo .row .job{
+        margin-top: -20px;
+        font-size: 15px;
+    }
+
+    .last{
+        padding-top: 50px;
+        display: block;
+        color: white;
+        border: 2px solid #333;
+        height: 1000px;
+        background-color: #333;
+        font-family: "Century Gothic",sans-serif;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .last div{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
