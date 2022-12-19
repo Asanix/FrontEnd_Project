@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Digital Marketing Agency CT | Mediaboom - Luxury Marketing</title>
 	<link href="styles.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </head>
 <body>
     <div class="topnav">
         <a id="contact" href="">CONTACT</a>
-        <a href="" class="moovingLink">INSIGHTS</a>
-        <a href="" class="moovingLink">RESOURCES</a>
-        <a href="" class="moovingLink">SERVICES</a>
+        <a href="/resources/resourses.html" class="moovingLink">RESOURCES</a>
+        <a href="/services/index.html" class="moovingLink">SERVICES</a>
         <a href="/our_agency/index.html" class="moovingLink">OUR AGENCY</a>
         <a href="/Industries/index.html" class="moovingLink">INDUSTRIES</a>
         <a href="/work/index.html" class="moovingLink">WORK</a>
         <a id="logo" href="#"><img src="../logo-dark.png"></a>
     </div>
 
-    <button id="openNav" onclick="openNav()"></button>
-    <div id="mySidebar"></div>
+    <div id="openNav">
+        <a href="#"><img src="../logo-dark.png"></a>
+        <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mySidebar">
+        <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+        <div style="margin-top: 30vh;">
+            <a href="./work/index.html"><p>WORK</p></a>
+            <a href="./Industries/index.html"><p>INDUSTRIES</p></a>
+            <a href="./our_agency/index.html"><p>OUR AGENCY</p></a>
+            <a href="./services/index.html"><p>SERVICES</p></a>
+            <a href="/resources/resourses.html"><p>RESOURCES</p></a>
+            <a href="./contact/contact.php"><p>CONTACT</p></a>
+        </div>
+    </div>
 
     <div id="desc">
         <video autoplay="" loop="" muted="" poster="">
@@ -265,15 +278,15 @@
         <div id="articles" style="display: flex; width: 75%; justify-content: center; margin-bottom: 2.5vw;">
             <div>
                 <img src="review.jpg" alt="review">
-                <p style="font-size: 1.5vw; color: #e0bc75; margin: 1vw;">ONLINE REVIEW MANAGEMENT – WHAT IT IS AND WHY YOU NEED IT</p>
+                <a href=""><p style="font-size: 1.5vw; color: #e0bc75; margin: 1vw;">ONLINE REVIEW MANAGEMENT – WHAT IT IS AND WHY YOU NEED IT</p></a>
             </div>
             <div>
                 <img src="hotel.jpg" alt="">
-                <p style="font-size: 1.5vw; color: #e0bc75; margin: 1vw;">TOP 10 STRATEGIES FOR LUXURY HOTEL SOCIAL MEDIA MARKETING</p>
+                <a href=""><p style="font-size: 1.5vw; color: #e0bc75; margin: 1vw;">TOP 10 STRATEGIES FOR LUXURY HOTEL SOCIAL MEDIA MARKETING</p></a>
             </div>
             <div>
                 <img src="b2b.png" alt="">
-                <p style="font-size: 1.5vw; color: #e0bc75; margin: 1vw;">B2B WEBSITE DESIGN – 28 PROFESSIONAL EXAMPLES</p>
+                <a href="">              <p style="font-size: 1.5vw; color: #e0bc75; margin: 1vw;">B2B WEBSITE DESIGN – 28 PROFESSIONAL EXAMPLES</p></a>
             </div>
         </div>
     </div>

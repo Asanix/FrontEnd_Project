@@ -14,16 +14,13 @@
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-
 .topnav a {
   margin: 1.20rem 0.5rem;
   padding: 0.6rem 0.9rem;
   float: right;
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: 500;
   color: black;
-  font-weight: bold;
 }
 
 .moovingLink {
@@ -577,24 +574,70 @@
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
  .topnav {
   display: none;
  }
 
  #openNav {
-  display: grid;
+  display: flex;
+  position: sticky;
+  height: 10vh;
+  top: 0;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 999;
+ }
+
+#openNav a {
+  margin: 1.2rem;
+}
+
+#openNav i {
+  font-size: 2vw;
+  margin: 0.60rem;
+}
+ 
+ #openNav button {
+  right: 0;
+  background: none;
+  border-style: none;
  }
 
  #mySidebar {
   position: sticky;
   top: 0;
   float: right;
-  height: 100vw;
+  height: 100vh;
   width: 20vw;
+  background-color: #333;
   margin-right: -20.5vw;
-  z-index: 999;
-  border: black solid;
+  margin-top: -35vw;
+  z-index: 2000;
   transition: margin-right 5s;
+ }
+
+#mySidebar a {
+  text-decoration: none;
+}
+
+ #mySidebar p {
+  margin: 2vw;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+ #mySidebar button {
+  position: absolute;
+  background: none;
+  right: 0;
+  margin: 1.75vw 1vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-style: none;
+ }
+
+ #mySidebar button i{
+  font-size: 3vw;
  }
 }
