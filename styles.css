@@ -70,6 +70,21 @@
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  20%,
+  80% {
+    margin-left: -5px;
+  }
+  40%,
+  60% {
+    margin-left: 5px;
+  }
+}
+
 #videoContainer {
   position: absolute;
   margin: auto;
@@ -1084,7 +1099,7 @@ form #text.shake {
     bottom: 30px;
     left: 80%;
   }
-  
+
   .message button {
     background: url(message.png);
     border-radius: 80px;
