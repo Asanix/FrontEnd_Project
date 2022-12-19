@@ -1,181 +1,254 @@
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
-    </head>
-    <body>
 
-        <div class="topnav">
-            <a id="logo" href="../index.html"><img src="../logo-dark.png"></a>
-            <a id="contact" href="">CONTACT</a>
-            <a href="" class="moovingLink">INSIGHTS</a>
-            <a href="" class="moovingLink">RESOURCES</a>
-            <a href="" id="choosenLink">SERVICES</a>
-            <a href="../Our_agency/index.html" class="moovingLink">OUR AGENCY</a>
-            <a href="../Industries/index.html" class="moovingLink">INDUSTRIES</a>
-            <a href="../work/index.html" class="moovingLink">WORK</a>
-        </div>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
+</head>
 
-        <div class="services">
-            <h1>Our Capabilities</h1>
-            <p>Our versatile suite of services give you limitless options to showcase your brand in unique ways.</p>        
-        </div>
+<body>
 
-        <div class="services_banner"></div>
-
-        <div class="text">
-            <p>What's your story?</p>
-            <p>Combining ROI-oriented digital marketing with story driven advertising, Mediaboom creates campaigns with compelling narratives that exceed marketing goals. Mediaboom begins each project with a full understanding and firm commitment to your strategic objectives. For brands looking to clarify, expand or rethink their perspective, we offer the following strategic services:</p>
-        </div>
-
-        <div class="block">
-            <div class="col">
-                <div class="row">
-                    <p>DIGITAL</p>
-                    <p>How we use storytelling to translate the singular, offline experience of your brand into the digital medium.</p>
-                    <p>WEB DESIGN & DEVELOPMENT<br>
-                        E-COMMERCE<br>
-                        CONTENT MANAGEMENT SYSTEMS<br>
-                        MOBILE APPS<br>
-                        DIGITAL INSTALLATIONS</p>
-                        <a href="https://mediaboom.com/services/digital">
-                            <button>LEARN MORE</button>
-                        </a>
-                </div>
-                <div class="row">
-                    <p>ADVERTISING</p>
-                    <p>Targeted advertising campaigns that leave a lasting impression on your audience and deliver results.</p>
-                    <p>PAY PER CLICK<br>
-                        SOCIAL ADS<br>                        
-                        DISPLAY ADS<br>
-                        MEDIA BUYING<br>
-                        AD MANAGEMENT</p>
-                        <a href="https://mediaboom.com/services/advertising">
-                            <button>LEARN MORE</button>
-                        </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <p>MARKETING</p>
-                    <p>Results oriented marketing to put your brand in its best light for maximum ROI and increase engagement.</p>
-                    <p>CONTENT MARKETING<br>
-                        SEARCH ENGINE OPTIMIZATION<br>
-                        SOCIAL MEDIA MARKETING<br>
-                        EMAIL MARKETING<br>
-                        CAMPAIGN MANAGEMENT</p>
-                        <a href="https://mediaboom.com/services/marketing">
-                            <button>LEARN MORE</button>
-                        </a>
-                </div>
-                <div class="row">
-                    <p>CONTENT</p>
-                    <p>Creating your brand's story through words, images, and motion to strengthen brand relationships.</p>
-                    <p>COPYWRITING<br>
-                        PHOTOGRAPHY<br>
-                        ILLUSTRATION<br>
-                        ANIMATION<br>
-                        VIDEO PRODUCTION</p>
-                        <a href="https://mediaboom.com/services/content-creation">
-                            <button>LEARN MORE</button>
-                        </a>
-                </div>                
-            </div>
-        </div>
-
-        <img src="teachers.jpg" style="margin-top: 50px; margin-bottom: 50px; width: 80%; margin-left: 10%;">
-
-        <p class="att_text">YOU HAVE OUR ATTENTION</p>
-        <div class="att">
-            <div class="col">
-                <div class="row">
-                    <p>First and foremost, we're at your service.</p>
-                    <p>You offer customers an exceptional experience; we are passionate about giving you an exceptional experience as well.</p>
-                </div>
-                <div class="row">
-                    <p>We have a proven process.</p>
-                    <p>Our roadmap allows us to confidently meet our commitments to you, but is still adaptable to meet each client's unique needs and expectations.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <p>Our designs are pixel perfect</p>
-                    <p>We attend to every detail so that for customers of our luxury brand clients, the experience is seamless and flawless.</p>
-                </div>
-                <div class="row">
-                    <p>Interact with our designers and developers directly.</p>
-                    <p>One-to-one conversation ensures nothing is lost in translation. We ensure you're always up to speed on our progress and someone is always available to consult with you.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="story">
-            <p>PICTURES THAT TELL A STORY</p>
-            <p>LET THESE SAMPLES OF OUR RECENT WORK SPARK IDEAS OF WHAT WE COULD CREATE FOR YOUR BRAND.</p>
-            <div class="picture">
-                <div class="pic">
-                    <div class="overlay"><p>MUSHA CAY</p>
-                        <p>Web Design & Development | 3D Animation</p>
-                        <p>SEE CASE STUDY</p>
-                    </div>
-                </div>
-                <div class="pic">
-                    <div class="overlay">
-                        <p>JW MARRIOTT</p>
-                        <p>Web Design & Development | Print</p>
-                        <p>SEE CASE STUDY</p>
-                    </div>     
-                </div>
-            </div>
-            <a href="../work/index.html">
-                <button>SEE ALL CASE STUDIES</button>
+    <div id="openNav">
+        <a href="../index.html"><img src="../logo-dark.png"></a>
+        <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mySidebar">
+        <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+        <div id="links">
+            <a href="">
+                <p>WORK</p>
+            </a>
+            <a href="../Industries/index.html">
+                <p>INDUSTRIES</p>
+            </a>
+            <a href="../our_agency/index.html">
+                <p>OUR AGENCY</p>
+            </a>
+            <a href="../services/index.html">
+                <p>SERVICES</p>
+            </a>
+            <a href="../resources/resourses.html">
+                <p>RESOURCES</p>
+            </a>
+            <a href="../contact/contact.php">
+                <p>CONTACT</p>
             </a>
         </div>
+    </div>
 
-        <div class="banner">
-            <p>Don't see what you're looking for? Just ask. We may call it by another name.</p>
-            <a href="https://mediaboom.com/contact/">
-                <button>GET IN TOUCH</button>
-            </a>
+    <div class="topnav">
+        <a id="logo" href="../index.html"><img src="../logo-dark.png"></a>
+        <a id="contact" href="">CONTACT</a>
+        <a href="" class="moovingLink">INSIGHTS</a>
+        <a href="" class="moovingLink">RESOURCES</a>
+        <a href="" id="choosenLink">SERVICES</a>
+        <a href="../Our_agency/index.html" class="moovingLink">OUR AGENCY</a>
+        <a href="../Industries/index.html" class="moovingLink">INDUSTRIES</a>
+        <a href="../work/index.html" class="moovingLink">WORK</a>
+    </div>
+
+    <div class="services">
+        <h1>Our Capabilities</h1>
+        <p>Our versatile suite of services give you limitless options to showcase your brand in unique ways.</p>
+    </div>
+
+    <div class="services_banner"></div>
+
+    <div class="text">
+        <p>What's your story?</p>
+        <p>Combining ROI-oriented digital marketing with story driven advertising, Mediaboom creates campaigns with
+            compelling narratives that exceed marketing goals. Mediaboom begins each project with a full understanding
+            and firm commitment to your strategic objectives. For brands looking to clarify, expand or rethink their
+            perspective, we offer the following strategic services:</p>
+    </div>
+
+    <div class="block">
+        <div class="col">
+            <div class="row">
+                <p>DIGITAL</p>
+                <p>How we use storytelling to translate the singular, offline experience of your brand into the digital
+                    medium.</p>
+                <p>WEB DESIGN & DEVELOPMENT<br>
+                    E-COMMERCE<br>
+                    CONTENT MANAGEMENT SYSTEMS<br>
+                    MOBILE APPS<br>
+                    DIGITAL INSTALLATIONS</p>
+                <a href="https://mediaboom.com/services/digital">
+                    <button>LEARN MORE</button>
+                </a>
+            </div>
+            <div class="row">
+                <p>ADVERTISING</p>
+                <p>Targeted advertising campaigns that leave a lasting impression on your audience and deliver results.
+                </p>
+                <p>PAY PER CLICK<br>
+                    SOCIAL ADS<br>
+                    DISPLAY ADS<br>
+                    MEDIA BUYING<br>
+                    AD MANAGEMENT</p>
+                <a href="https://mediaboom.com/services/advertising">
+                    <button>LEARN MORE</button>
+                </a>
+            </div>
         </div>
+        <div class="col">
+            <div class="row">
+                <p>MARKETING</p>
+                <p>Results oriented marketing to put your brand in its best light for maximum ROI and increase
+                    engagement.</p>
+                <p>CONTENT MARKETING<br>
+                    SEARCH ENGINE OPTIMIZATION<br>
+                    SOCIAL MEDIA MARKETING<br>
+                    EMAIL MARKETING<br>
+                    CAMPAIGN MANAGEMENT</p>
+                <a href="https://mediaboom.com/services/marketing">
+                    <button>LEARN MORE</button>
+                </a>
+            </div>
+            <div class="row">
+                <p>CONTENT</p>
+                <p>Creating your brand's story through words, images, and motion to strengthen brand relationships.</p>
+                <p>COPYWRITING<br>
+                    PHOTOGRAPHY<br>
+                    ILLUSTRATION<br>
+                    ANIMATION<br>
+                    VIDEO PRODUCTION</p>
+                <a href="https://mediaboom.com/services/content-creation">
+                    <button>LEARN MORE</button>
+                </a>
+            </div>
+        </div>
+    </div>
 
-        <div class="last">
-            <div>
-                <img src="../mediaboom.png">
-                <p class="grey">Mediaboom <br>
-                    73 Church St <br>
-                    Guilford, CT 06437 <br>
-                    <a class="opa" href="">info@mediaboom.com</a><br>
-                    <a class="opa" href="">800.710.3975</a></p>
+    <img src="teachers.jpg" style="margin-top: 50px; margin-bottom: 50px; width: 80%; margin-left: 10%;">
+
+    <p class="att_text">YOU HAVE OUR ATTENTION</p>
+    <div class="att">
+        <div class="col">
+            <div class="row">
+                <p>First and foremost, we're at your service.</p>
+                <p>You offer customers an exceptional experience; we are passionate about giving you an exceptional
+                    experience as well.</p>
             </div>
-            <div>
-                <p>FOLLOW US</p>
-                <div class="logo">
-                    <a href="https://www.facebook.com/mediaBOOM/"><img src="../facebook.png"></a>
-                    <a href="https://www.twitter.com/mediaboom"><img src="../twitter.png"></a>
-                    <a href="https://www.linkedin.com/company/mediaboom"><img src="../in.png"></a>
-                    <a href="https://www.instagram.com/mediaboom/"><img src="../insta.png"></a>
+            <div class="row">
+                <p>We have a proven process.</p>
+                <p>Our roadmap allows us to confidently meet our commitments to you, but is still adaptable to meet each
+                    client's unique needs and expectations.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <p>Our designs are pixel perfect</p>
+                <p>We attend to every detail so that for customers of our luxury brand clients, the experience is
+                    seamless and flawless.</p>
+            </div>
+            <div class="row">
+                <p>Interact with our designers and developers directly.</p>
+                <p>One-to-one conversation ensures nothing is lost in translation. We ensure you're always up to speed
+                    on our progress and someone is always available to consult with you.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story">
+        <p>PICTURES THAT TELL A STORY</p>
+        <p>LET THESE SAMPLES OF OUR RECENT WORK SPARK IDEAS OF WHAT WE COULD CREATE FOR YOUR BRAND.</p>
+        <div class="picture">
+            <div class="pic">
+                <div class="overlay">
+                    <p>MUSHA CAY</p>
+                    <p>Web Design & Development | 3D Animation</p>
+                    <p>SEE CASE STUDY</p>
                 </div>
-                <p>JOIN THE TEAM</p>
-                <p class="grey"><a class="opa" href="https://mediaboom.com/careers">View open positions »</a></p>
             </div>
-            <div>
-                <p>OUR SERVICES</p>
-                <p class="grey"><a class="opa" href="https://mediaboom.com/services/digital/">Digital</a><br>
+            <div class="pic">
+                <div class="overlay">
+                    <p>JW MARRIOTT</p>
+                    <p>Web Design & Development | Print</p>
+                    <p>SEE CASE STUDY</p>
+                </div>
+            </div>
+        </div>
+        <a href="../work/index.html">
+            <button>SEE ALL CASE STUDIES</button>
+        </a>
+    </div>
+
+    <div class="banner">
+        <p>Don't see what you're looking for? Just ask. We may call it by another name.</p>
+        <a href="https://mediaboom.com/contact/">
+            <button>GET IN TOUCH</button>
+        </a>
+    </div>
+
+    <div class="last">
+        <div>
+            <img src="../mediaboom.png">
+            <p class="grey">Mediaboom <br>
+                73 Church St <br>
+                Guilford, CT 06437 <br>
+                <a class="opa" href="">info@mediaboom.com</a><br>
+                <a class="opa" href="">800.710.3975</a>
+            </p>
+        </div>
+        <div>
+            <p>FOLLOW US</p>
+            <div class="logo">
+                <a href="https://www.facebook.com/mediaBOOM/"><img src="../facebook.png"></a>
+                <a href="https://www.twitter.com/mediaboom"><img src="../twitter.png"></a>
+                <a href="https://www.linkedin.com/company/mediaboom"><img src="../in.png"></a>
+                <a href="https://www.instagram.com/mediaboom/"><img src="../insta.png"></a>
+            </div>
+            <p>JOIN THE TEAM</p>
+            <p class="grey"><a class="opa" href="https://mediaboom.com/careers">View open positions »</a></p>
+        </div>
+        <div>
+            <p>OUR SERVICES</p>
+            <p class="grey"><a class="opa" href="https://mediaboom.com/services/digital/">Digital</a><br>
                 <a class="opa" href="https://mediaboom.com/services/advertising/">Advertising</a><br>
                 <a class="opa" href="https://mediaboom.com/services/marketing/">Marketing</a><br>
                 <a class="opa" href="https://mediaboom.com/services/content-creation/">Content Creation</a><br>
-                <a class="opa" href="https://mediaboom.com/specialty-services/">Industry Specific</a></p>
-            </div>
-            <div>
-                <p>LATEST NEWS</p>
-                <a class="opa" href="https://mediaboom.com/news/online-review-management/">Online Review Management – What It Is and Why You Need it </a>
-             <a class="opa" href="https://mediaboom.com/news/luxury-hotel-social-media-marketing/">Top 10 Strategies for Luxury Hotel Social Media Marketing</a>
-                <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
-            </div>
-         </div>
-        
+                <a class="opa" href="https://mediaboom.com/specialty-services/">Industry Specific</a>
+            </p>
+        </div>
+        <div>
+            <p>LATEST NEWS</p>
+            <a class="opa" href="https://mediaboom.com/news/online-review-management/">Online Review Management – What
+                It Is and Why You Need it </a>
+            <a class="opa" href="https://mediaboom.com/news/luxury-hotel-social-media-marketing/">Top 10 Strategies for
+                Luxury Hotel Social Media Marketing</a>
+            <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
+        </div>
+    </div>
+    <div id="message">
+        <button onclick="show()" id="but"></button>
+     </div>
 
-    </body>
+     <div id="typing">
+        <div id="hum">
+           <div>
+              <img src="../Our_agency/era.jpg" alt="">
+              <p>Hi there!</p>
+              <button onclick="show()">&#215;</button>
+           </div>
+        </div>
+        <div id="mes">
+           <div>
+              <p>Welcome back! You can begin by asking your question below. Someone will be with you shortly.</p>
+           </div>
+        </div>
+        <div id="type">
+           <form name="form" id="form1">
+              <input id="text" type="text" name="text" placeholder="Enter your message...">
+           </form>
+        </div>
+        <div id="send">
+           <button type="submit" id="send_but" onclick="empty()"></button>
+        </div>
+     </div>
+
+
+</body>
+
 </html>

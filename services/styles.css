@@ -1,88 +1,92 @@
-body{
+body {
     margin: 0;
-}  
-  .topnav {
+}
+
+.topnav {
     overflow: hidden;
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: #fff;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     margin: 1.20rem 0.5rem;
     padding: 0.6rem 0.9rem;
     float: right;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 500;  
-    font-family: "Century Gothic",sans-serif;
+    font-weight: 500;
+    font-family: "Century Gothic", sans-serif;
     font-weight: 300;
     color: white;
     scroll-behavior: smooth;
     color: black;
     position: sticky;
     top: 0px;
-  }
-  
-  #logo {
+}
+
+#logo {
     margin: 0.60rem;
     float: left;
-  }
-  
-  #contact {
+}
+
+#contact {
     background: #e0bc75;
     margin-right: 1.4rem;
-  }
-  
-  .moovingLink {
-    background: 
-      linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
-      linear-gradient(to right, #e0bc75, #e0bc75);
+}
+
+.moovingLink {
+    background:
+        linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+        linear-gradient(to right, #e0bc75, #e0bc75);
     background-size: 100% 0.1em, 0 0.1em;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: 400ms;
-  }
-  
-  .moovingLink:hover,
-  .moovingLink:focus {
+}
+
+.moovingLink:hover,
+.moovingLink:focus {
     color: #e0bc75;
     background-size: 0 0.1em, 100% 0.1em;
-  }
-  
-  #choosenLink {
-    background: 
-      linear-gradient(to right, #e0bc75, #e0bc75),
-      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+}
+
+#choosenLink {
+    background:
+        linear-gradient(to right, #e0bc75, #e0bc75),
+        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
     background-size: 100% 0.1em, 0 0.1em;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
-  }
+}
 
-.services{
+.services {
     margin-left: 8%;
     margin-bottom: 150px;
 }
-.services h1{
+
+.services h1 {
     font-size: 60px;
     font-style: italic;
     margin-bottom: 0px;
     margin-top: 120px;
-    font-family: georgia,serif;
+    font-family: georgia, serif;
     font-weight: 400;
     opacity: 0.9;
 }
-.services p{
+
+.services p {
     border-left: 2px solid #f8a900;
     border-right: 0px;
     padding-left: 10px;
     max-width: 480px;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
     opacity: 0.4;
 }
-.services_banner{
+
+.services_banner {
     background: url(services_banner.jpg);
     height: 270px;
     background-position: center;
@@ -90,7 +94,8 @@ body{
     width: 100%;
     background-size: auto;
 }
-.text{
+
+.text {
     margin-top: 40px;
     margin-bottom: 70px;
     padding: 10px;
@@ -100,27 +105,30 @@ body{
     margin-right: auto;
 }
 
-.text p:nth-child(1){
+.text p:nth-child(1) {
     font-size: 22px;
     font-style: italic;
     font-weight: 300;
-    font-family: georgia,serif;
+    font-family: georgia, serif;
 }
-.text p:nth-child(2){
-    font-family: "Century Gothic",sans-serif;
+
+.text p:nth-child(2) {
+    font-family: "Century Gothic", sans-serif;
     font-weight: 100;
     font-size: 15;
     opacity: 0.6;
 }
-.text a{
+
+.text a {
     text-decoration: none;
     color: #b97800;
 }
 
-.block .col{
+.block .col {
     display: flex;
 }
-.block .col .row{
+
+.block .col .row {
     text-align: left;
     display: block;
     margin-left: auto;
@@ -128,70 +136,82 @@ body{
     width: 30%;
 }
 
-.block .col .row p:nth-child(1){
-    font-family: "Century Gothic",sans-serif;
+.block .col .row p:nth-child(1) {
+    font-family: "Century Gothic", sans-serif;
     color: #f6ca78;
     font-size: 40px;
     margin-bottom: 20px;
 }
-.block .col .row p:nth-child(2){
+
+.block .col .row p:nth-child(2) {
     opacity: 0.8;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
-.block .col .row p:nth-child(3){
+
+.block .col .row p:nth-child(3) {
     line-height: 2;
     font-weight: 400;
     font-size: 20px;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
-.block .col .row a button{
+
+.block .col .row a button {
     border: 2px solid #f6ca78;
     color: #f6ca78;
     background: none;
     cursor: pointer;
     padding: 10px 20px;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
     font-size: 18px;
     transition: 0.3s;
 }
-.block .col .row a button:hover{
+
+.block .col .row a button:hover {
     color: #fed994;
 }
-.block .col .row a button:focus{
+
+.block .col .row a button:focus {
     color: #6b63e0;
 }
 
-.att_text{
+.att_text {
     text-align: center;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
     color: #f3b543;
     font-size: 40px;
 }
-.att{
+
+.att {
     display: block;
     margin-left: 15%;
 }
-.att p{
+
+.att p {
     text-align: center;
 }
-.att .col{
+
+.att .col {
     display: flex;
 }
-.att .col .row{
+
+.att .col .row {
     width: 40%;
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
-.att .col .row p:nth-child(1){
-    font-family: georgia,serif;
+
+.att .col .row p:nth-child(1) {
+    font-family: georgia, serif;
     font-style: italic;
     font-size: 22px;
 }
-.att .col .row p:nth-child(2){
-    font-family: "Century Gothic",sans-serif;
+
+.att .col .row p:nth-child(2) {
+    font-family: "Century Gothic", sans-serif;
 }
-.story{
+
+.story {
     border-top: 2px solid #f3b543;
     width: 80%;
     margin-left: auto;
@@ -199,92 +219,109 @@ body{
     text-align: center;
     margin-bottom: 60px;
 }
-.story p:nth-child(1){
-    font-family: "Century Gothic",sans-serif;
+
+.story p:nth-child(1) {
+    font-family: "Century Gothic", sans-serif;
     font-size: 40px;
     color: #f3b543;
     margin-bottom: 0px;
 }
-.story p:nth-child(2){
-    font-family: "Century Gothic",sans-serif;
+
+.story p:nth-child(2) {
+    font-family: "Century Gothic", sans-serif;
     font-size: 16px;
     letter-spacing: 2;
     margin-bottom: 60px;
 }
-.story .pic p:nth-child(1){
-    font-family: "Century Gothic",sans-serif;
+
+.story .pic p:nth-child(1) {
+    font-family: "Century Gothic", sans-serif;
     color: #f3b543;
     font-size: 40px;
 }
-.story .pic p:nth-child(2){
-    font-family: "Century Gothic",sans-serif;
+
+.story .pic p:nth-child(2) {
+    font-family: "Century Gothic", sans-serif;
     font-size: 18px;
     letter-spacing: 2;
 }
 
-.picture{
+.picture {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-.picture .pic{
-    width: 40%;
+
+.picture .pic {
+    width: 45%;
     height: 300px;
     cursor: pointer;
 }
 
-.picture .pic:nth-child(1){
+.picture .pic:nth-child(1) {
     background: url(../pic1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.picture .pic .overlay{
+
+.picture .pic .overlay {
     text-align: left;
-    margin: 10px;
-    padding: 5% 3%;
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 2%;
+    width: 88%;
+    height: 250px;
     transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.1%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.picture .pic .overlay:hover{
-    margin: 0px;
-    padding: 7.3% 5%;
+
+.picture .pic .overlay:hover {
+    transform: scale(1.14);
 }
-.picture .pic:nth-child(2){
+
+.picture .pic:nth-child(2) {
     background: url(../pic2.jpg);
 }
-.picture .pic div p:nth-child(1){
+
+.picture .pic div p:nth-child(1) {
     color: white;
     font-size: 20px;
 }
-.picture .pic div p:nth-child(2){
+
+.picture .pic div p:nth-child(2) {
     color: white;
     font-size: 24px;
-    font-family: georgia,serif;
+    font-family: georgia, serif;
     font-style: italic;
 }
-.picture .pic div p:nth-child(3){
+
+.picture .pic div p:nth-child(3) {
     color: #f3b543;
     font-size: 20px;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
 }
-.story a button{
+
+.story a button {
     margin-top: 40px;
     border: 2px solid #f3b543;
     background: none;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
     color: #f3b543;
     font-size: 16px;
     padding: 8 18;
     cursor: pointer;
     transition: 0.3s;
 }
-.story a button:hover{
+
+.story a button:hover {
     opacity: 0.8;
 }
-.story a button:focus{
+
+.story a button:focus {
     color: rgb(118, 118, 249);
 }
-.banner{
+
+.banner {
     background: url(../banner.jpg);
     height: 270px;
     color: white;
@@ -294,16 +331,17 @@ body{
     width: 100%;
     margin-top: -25px;
 }
-.banner p{
+
+.banner p {
     font-size: 25px;
     padding-top: 80px;
     font-style: italic;
     font-weight: 300;
-    font-family: georgia,serif;
-    
+    font-family: georgia, serif;
+
 }
 
-.banner button{
+.banner button {
     font-weight: bold;
     color: white;
     font-size: 16px;
@@ -313,110 +351,431 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
-.banner button:hover{
+
+.banner button:hover {
     background: none;
     color: #f6ca78;
 }
-.last{
+
+.last {
     padding-top: 50px;
     display: flex;
     color: white;
     border: 2px solid #333;
     height: 400px;
     background-color: #333;
-    font-family: "Century Gothic",sans-serif;
+    font-family: "Century Gothic", sans-serif;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
 }
-.last div:nth-child(1) img{
+
+.last div:nth-child(1) img {
     margin-bottom: 30px;
 }
-.last div{
+
+.last div {
     width: 25%;
 }
-.last div:nth-child(4) a{
+
+.last div:nth-child(4) a {
     color: white;
 }
-.last .grey{
+
+.last .grey {
     opacity: 0.7;
 }
-.last a{
+
+.last a {
     text-decoration: none;
     color: white;
     transition: 0.3s;
 }
-.last .opa:hover{
+
+.last .opa:hover {
     opacity: 0.5;
 }
-.last .opa:focus{
+
+.last .opa:focus {
     color: rgb(114, 114, 250);
 }
-.last .logo{
+
+.last .logo {
     display: flex;
     margin-bottom: 30px;
 }
-.last .logo img{
+
+.last .logo img {
     width: 20px;
     height: 25px;
     margin-right: 20px;
     margin-left: -2px;
     cursor: pointer;
 }
+#mySidebar {
+    display: none;
+  }
+  
+  #openNav {
+    display: none;
+  }
+  #message {
+    width: 60px;
+    position: fixed;
+    bottom: 36px;
+    left: 93%;
+    z-index: 5;
+}
 
-@media screen and (max-width: 1050px) {
-    .text{
+#message button {
+    background: url(../message.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #093587;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#message button:hover {
+    background: url(../pen.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#typing {
+    border-radius: 20px;
+    background-color: white;
+    position: fixed;
+    width: 350px;
+    height: 500px;
+    right: 4%;
+    bottom: 30px;
+    display: none;
+}
+
+#typing #hum {
+    height: 25%;
+    border-radius: 19px 19px 0px 0px;
+    background-color: #f6ca78;
+}
+
+#typing #hum div {
+    display: flex;
+}
+
+#typing #hum img {
+    width: 75px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+
+#typing #hum div p {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+#typing #hum div button {
+    margin-left: 60px;
+    height: 40px;
+    width: 40px;
+    margin-top: 45px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    transition: 0.3s;
+    padding-top: 4px;
+    padding-right: 7px;
+}
+
+#typing #hum div button:hover {
+    background: rgba(68, 68, 68, 0.559);
+}
+
+#typing #mes {
+    height: 55%;
+}
+
+#typing #mes div {
+    border-radius: 20px;
+    background-color: #4f4f4f20;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 250px;
+    height: 80px;
+}
+
+#typing #mes div p {
+    padding: 14px 5px 10px 15px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+}
+
+#typing #type {
+    height: 15%;
+    border-top: 2px solid rgba(128, 128, 128, 0.582);
+    border-radius: 0px 0px 19px 19px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+
+#typing #type input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+#typing #send {
+    width: 60px;
+    position: fixed;
+    bottom: 36px;
+    left: 93%;
+    z-index: 5;
+}
+
+#typing #send button {
+    background: url(../send.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #093587;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0px;
+}
+
+#typing #send button:hover {
+    border-radius: 35px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+form #text.shake {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+
+    0%,
+    100% {
+        margin-left: 0px;
+    }
+
+    20%,
+    80% {
+        margin-left: -5px;
+    }
+
+    40%,
+    60% {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .topnav {
+        display: none;
+    }
+
+    #openNav {
+        display: flex;
+        position: sticky;
+        height: 10vw;
+        top: 0;
+        justify-content: space-between;
+        background-color: white;
+        z-index: 999;
+    }
+
+    #openNav a img {
+        width: 25vw;
+    }
+
+    #openNav a {
+        margin: 3vw;
+        margin-left: 3vw;
+    }
+
+    #openNav i {
+        filter: brightness(0.5);
+        font-size: 2vw;
+        margin: 3.5vw;
+    }
+
+    #openNav button {
+        right: 0;
+        background: none;
+        border-style: none;
+    }
+
+    #mySidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        float: right;
+        height: 150vh;
+        overflow: hidden;
+        width: 20vw;
+        background-color: #333;
+        margin-right: -20.5vw;
+        z-index: 2000;
+    }
+
+    #mySidebar a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #links {
+        position: absolute;
+        top: 30vh;
+    }
+
+    #mySidebar p {
+        font-size: 1.5vw;
+        margin: 2vw;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #mySidebar button {
+        position: absolute;
+        height: 3vh;
+        width: 3vh;
+        top: 2vh;
+        margin-left: 12.5vw;
+        color: black;
+        position: relative;
+        border-style: none;
+        background: none;
+    }
+
+    #mySideBar i {
+        width: 1.5vw;
+    }
+
+    .text {
         width: 95%;
     }
-    .block .col{
+
+    .block .col {
         display: inline;
     }
-    .block .col .row{
+
+    .block .col .row {
         width: 80%;
         margin: 30px;
     }
-    .att .col{
+
+    .att .col {
         display: inline;
     }
-    .att .col .row{
+
+    .att .col .row {
         width: 80%;
     }
-    .story .picture{
+
+    .story .picture {
         display: inline;
     }
-    .story .picture .pic{
+
+    .story .picture .pic {
         width: 100%;
-        margin-bottom: 30px;
+        padding-top: 1%;
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
-    .picture .pic .overlay{
+
+    .picture .pic .overlay {
+        padding-left: 6%;
+        padding-top: 5%;
         text-align: left;
-        padding: 5% 3%;
         width: 90%;
+        height: 250px;
         background-color: rgba(0, 0, 0, 0.7);
         transition: 0.3s;
     }
-    .picture .pic .overlay:hover{
-        margin: 0px;
-        padding: 6.6% 5%;
+
+    .picture .pic .overlay:hover {
+        transform: scale(1.04);
     }
-    .story a button{
+
+    .story a button {
         margin-top: 10px;
     }
-    .last{
+
+    .last {
         padding-top: 50px;
         display: block;
         color: white;
         border: 2px solid #333;
         height: 1000px;
         background-color: #333;
-        font-family: "Century Gothic",sans-serif;
+        font-family: "Century Gothic", sans-serif;
         justify-content: space-between;
         padding-left: 10%;
         padding-right: 10%;
     }
-    .last div{
+
+    .last div {
         width: 100%;
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    .message {
+        width: 80px;
+        position: fixed;
+        bottom: 30px;
+        left: 80%;
+    }
+
+    .message button {
+        background: url(../message.png);
+        border-radius: 80px;
+        border: none;
+        background-color: #f8a900;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
