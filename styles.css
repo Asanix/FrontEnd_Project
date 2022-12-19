@@ -8,7 +8,12 @@
 
 .topnav {
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.75);
 }
+
 
 .topnav a {
   margin: 1.20rem 0.5rem;
@@ -17,6 +22,8 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
+  color: black;
+  font-weight: bold;
 }
 
 .moovingLink {
@@ -43,6 +50,11 @@
 #contact {
   background: #e0bc75;
   margin-right: 1.4rem;
+  transition: 400ms;
+}
+
+#contact:hover {
+  color: white;
 }
 
 #desc {
@@ -70,7 +82,7 @@
   position: absolute;
   font-size: 40px;
   margin-left: 7.5%;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -79,7 +91,7 @@
   position: absolute;
   width: 45%;
   margin-left: 7.5%;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -88,13 +100,14 @@
   position: absolute;
   width: 25%;
   margin-left: 7.5%;
-  top: 30rem; height: 2.5rem; 
+  height: 2.5rem;
+  top: 60%;
   background-color: #e0bc75; 
   color: white;
   border-color: #e0bc75;
   transition: 300ms;
   border-style: solid;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -108,8 +121,8 @@
   display: flex;
   justify-content:space-between;
   width: 100%;
-  margin-top: 2rem;
-  animation: fadeInAnimation ease 1s;
+  margin-top: 2vw;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -136,8 +149,13 @@
   background-color: #e0bc75; 
   border-color: #e0bc75;
   border-style: solid;
-  color: white;
   transition: 300ms;
+}
+
+#brand-desc button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #e0bc75;
+  cursor: pointer;
 }
 
 #brand-image {
@@ -169,7 +187,7 @@
   background-color: #333333;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -196,8 +214,13 @@
   background-color: #e0bc75; 
   border-color: #e0bc75;
   border-style: solid;
-  color: white;
   transition: 300ms;
+}
+
+#built-desc button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #e0bc75;
+  cursor: pointer;
 }
 
 #built-image {
@@ -228,6 +251,9 @@
   margin-top: 2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #exp p {
@@ -252,8 +278,13 @@
   background-color: #e0bc75; 
   border-color: #e0bc75;
   border-style: solid;
-  color: white;
   transition: 300ms;
+}
+
+#exp-desc button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #e0bc75;
+  cursor: pointer;
 }
 
 #exp-image {
@@ -374,6 +405,7 @@
 }
 
 #services div button:hover {
+  cursor: pointer;
   border-color: #e0bc75;
   background-color: white;
   color: #e0bc75;
@@ -427,6 +459,7 @@
 }
 
 #work button:hover {
+  cursor: pointer;
   border-color: #e0bc75;
   background-color: white;
   color: #e0bc75;
@@ -452,15 +485,18 @@
   width: 100%;
   margin-top: -25px;
 }
+
 .banner p:nth-child(1){
   font-size: 25px;
   padding-top: 5%;
   margin-bottom: -15px;
 }
+
 .banner p:nth-child(2){
   font-size: 30px;
   font-weight: bold;
 }
+
 .banner button{
   font-weight: bold;
   color: white;
@@ -471,6 +507,7 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
 .banner button:hover{
   background: none;
   color: #f6ca78;
@@ -488,30 +525,42 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+
 .last div:nth-child(1) img{
   margin-bottom: 30px;
 }
+
 .last div{
   width: 25%;
 }
+
 .last .grey{
   opacity: 0.7;
 }
+
 .last a{
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
+
+.last p {
+  color: white;
+}
+
 .last .opa:hover{
   opacity: 0.5;
 }
+
 .last .opa:focus{
   color: rgb(114, 114, 250);
 }
+
 .last .logo{
   display: flex;
   margin-bottom: 30px;
 }
+
 .last .logo img{
   width: 20px;
   height: 25px;

@@ -9,6 +9,10 @@
 
 .topnav {
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
 }
 
 .topnav a {
@@ -28,6 +32,11 @@
 #contact {
   background: #e0bc75;
   margin-right: 1.4rem;
+  transition: 400ms;
+}
+
+#contact:hover {
+  color: white;
 }
 
 .moovingLink {
@@ -135,15 +144,18 @@
   width: 100%;
   margin-top: -25px;
 }
+
 .banner p:nth-child(1){
   font-size: 25px;
   padding-top: 5%;
   margin-bottom: -15px;
 }
+
 .banner p:nth-child(2){
   font-size: 30px;
   font-weight: bold;
 }
+
 .banner button{
   font-weight: bold;
   color: white;
@@ -154,6 +166,7 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
 .banner button:hover{
   background: none;
   color: #f6ca78;
@@ -171,30 +184,42 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.last p {
+  color: white;
+}
+
 .last div:nth-child(1) img{
   margin-bottom: 30px;
 }
+
 .last div{
   width: 25%;
 }
+
 .last .grey{
   opacity: 0.7;
 }
+
 .last a{
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
+
 .last .opa:hover{
   opacity: 0.5;
 }
+
 .last .opa:focus{
   color: rgb(114, 114, 250);
 }
+
 .last .logo{
   display: flex;
   margin-bottom: 30px;
 }
+
 .last .logo img{
   width: 20px;
   height: 25px;
