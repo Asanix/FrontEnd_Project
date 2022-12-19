@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $("#all").click(function(){
@@ -111,8 +112,24 @@
         </div>
     </div>
 
-    <h1 style="font-size: 5vw; margin: 7.5% 0 0 7.5%; font-family: georgia,serif; font-style: italic;">Work</h1>
-    <p style="font-size: 1.1vw ;border-style: solid; border-color: #e0bc75; border-width: 0 0 0 2px; width: 35%; margin-left:7.5%; padding-left: 1%;">
+    <div id="openNav">
+        <a href="../index.html"><img src="../logo-dark.png"></a>
+        <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mySidebar">
+        <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+        <div id="links">
+            <a href=""><p>WORK</p></a>
+            <a href="../Industries/index.html"><p>INDUSTRIES</p></a>
+            <a href="../our_agency/index.html"><p>OUR AGENCY</p></a>
+            <a href="../services/index.html"><p>SERVICES</p></a>
+            <a href="../resources/resourses.html"><p>RESOURCES</p></a>
+            <a href="../contact/contact.php"><p>CONTACT</p></a>
+        </div>
+    </div>
+
+    <h1 id="work" style="margin: 7.5% 0 0 7.5%; color: black; font-family: georgia,serif; font-style: italic;">Work</h1>
+    <p id="workDesc" style="color: black; border-style: solid; border-color: #e0bc75; border-width: 0 0 0 2px; margin-left:7.5%; padding-left: 1%;">
         See how these recent projects went from concept to gorgeous outcome while delivering the promised results for our clients.
     </p>
 
