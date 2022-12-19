@@ -204,6 +204,7 @@ h1{
     width: 100%;
     height: 400px;
     padding: 75px 0;
+    margin-bottom: -80px;
 }
 .sub{
     width: 100%;
@@ -230,6 +231,52 @@ input{
     font-weight: 600;
     font-size: 14px;
 }
+.last{
+    padding-top: 50px;
+    display: flex;
+    color: white;
+    border: 2px solid #333;
+    height: 400px;
+    background-color: #333;
+    font-family: "Century Gothic",sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.last div:nth-child(1) img{
+    margin-bottom: 30px;
+}
+.last div{
+    width: 25%;
+}
+.last .grey{
+    opacity: 0.7;
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.last .opa:hover{
+    opacity: 0.5;
+}
+.last .opa:focus{
+    color: rgb(114, 114, 250);
+}
+.last .logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+.last .logo img{
+    width: 20px;
+    height: 25px;
+    margin-right: 20px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+
+
 </style>
 
 <body>
@@ -321,15 +368,45 @@ input{
                     <button class="submit" type="submit">RECEIVE INSIGHTS NOW</button>
                 </form>
             </div>
-    </div>
+        </div>
 
+    <div class="last">
+            <div>
+                <img src="../mediaboom.png">
+                <p class="grey">Mediaboom <br>
+                    73 Church St <br>
+                    Guilford, CT 06437 <br>
+                    <a class="opa" href="">info@mediaboom.com</a><br>
+                    <a class="opa" href="">800.710.3975</a></p>
+            </div>
+            <div>
+                <p>FOLLOW US</p><br>
+                <div class="logo">
+                    <a href="https://www.facebook.com/mediaBOOM/"><img src="../facebook.png"></a>
+                    <a href="https://www.twitter.com/mediaboom"><img src="../twitter.png"></a>
+                    <a href="https://www.linkedin.com/company/mediaboom"><img src="../in.png"></a>
+                    <a href="https://www.instagram.com/mediaboom/"><img src="../insta.png"></a>
+                </div>
+                <p>JOIN THE TEAM</p>
+                <p class="grey"><a class="opa" href="https://mediaboom.com/careers">View open positions »</a></p>
+            </div>
+            <div>
+                <p>OUR SERVICES</p><br>
+                <p class="grey"><a class="opa" href="https://mediaboom.com/services/digital/">Digital</a><br>
+                <a class="opa" href="https://mediaboom.com/services/advertising/">Advertising</a><br>
+                <a class="opa" href="https://mediaboom.com/services/marketing/">Marketing</a><br>
+                <a class="opa" href="https://mediaboom.com/services/content-creation/">Content Creation</a><br>
+                <a class="opa" href="https://mediaboom.com/specialty-services/">Industry Specific</a></p>
+            </div>
+            <div>
+                <p>LATEST NEWS</p><br>
+                <p>Online Review Management – <br>
+                What It Is and Why You Need it </p><br>
+                <p>Top 10 Strategies for Luxury Hotel <br>
+                Social Media Marketing</p><br>
+                <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-</body>
+    </body>
 </html>
