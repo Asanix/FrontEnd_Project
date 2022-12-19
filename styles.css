@@ -19,6 +19,22 @@
   font-weight: 500;
 }
 
+.moovingLink {
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, #e0bc75, #e0bc75);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 400ms;
+}
+
+.moovingLink:hover,
+.moovingLink:focus {
+  color: #e0bc75;
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
 #logo {
   margin: 0.60rem;
   float: left;
@@ -259,52 +275,247 @@
   margin: 0 0 0.5rem;
 }
 
-#number {
+#numbers {
+  background-image: url('https://mbluxury1.s3.amazonaws.com/2020/09/16124553/MB_homepage-numbersBG.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
-  margin-left: 4.5rem;
+  height: 0;
+  padding-top: 20.5%;
   display: flex;
-  width: 90%;
 }
 
-#number h4{
-  font-size: 53px;
-  margin: 10px 0 20px;
-  width: 65%;
-  font-family: georgia,serif;
+#founded {
+  margin-left: 7.5rem;
+  width: 45%;
+  margin-top: -17%;
+  margin-right: 5%;
+}
+
+#founded h3 {
+  font-family: georgia,serif; 
   font-style: italic;
+  font-size: 3.5vw;
 }
 
-#number p {
-  width: 75%;
-}
-
-#number ul {
-  margin-right: 2rem;
-  list-style: none;
-}
-
-#numbersDesc {
-  width: 50%;
+#founded p {
+  font-size: 1.2vw;
+  font-weight: lighter;
 }
 
 #fourPoints {
-  padding-top: 3rem;
   display: flex;
-  width: 50%;
+  width: 45%;
+  margin-top: -17vw;
 }
 
-#fourPoints h2 {
-  font-size: 55px;
+#fourPoints div {
+  margin-right: 15%;
+}
+
+#fourPoints h4 {
   font-weight: bold;
+  font-size: 2.5vw;
   color: #e0bc75;
+  margin-left:20%;
 }
 
 #fourPoints p {
-  font-size: 20px;
+  font-weight: bolder;
+}
+
+#fourPoints ul {
+  list-style: none;
+}
+
+#fourPoints ul li {
+  margin-bottom: 3vh;
+}
+
+#services {
+  display: flex;
+  width: 75%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#services div{
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-top: 3.5%;
+}
+
+#services div img {
+  width: 20vw;
+}
+
+#services div h3 {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  font-size: 1.5rem;
+  color: #e0bc75;
+}
+
+#services div p {
+  font-size: 1.1rem;
+  color: black;
+}
+
+#services div button {
+  border-style: solid;
+  border-color: #e0bc75;
+  border-width: 2px;
+  background-color: #e0bc75;
+  color: white;
+  transition: 300ms;
+  width: 13.5vw;
+  height: 3vw;
+  margin-top: 2vw;
+}
+
+#services div button:hover {
+  border-color: #e0bc75;
+  background-color: white;
+  color: #e0bc75;
+}
+
+#services ul {
+  margin-top: 1vw;
+}
+
+#services ul li {
+  margin-top: 0.75vw;
+  margin-left: -1.25vw;
+  color: black;
+}
+
+#work {
+  margin-top: 5vw;
+  background-color: rgba(240, 240, 240, 0.75);
   text-align: center;
 }
 
-#fourPoints li {
-  width: 20rem;
+#work h4 {
+  padding-top: 3.5vw;
+  color: black;
+  text-align: center;
+  font-family: georgia,serif;
+  font-style: italic;
+  font-size: 2.1vw;
 }
 
+#work img {
+  width: 19.5vw;
+  filter: grayscale(1);
+  transition: 300ms;
+}
+
+#work img:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  filter: grayscale(0);
+}
+
+#work button {
+  border-style: solid;
+  border-color: #e0bc75;
+  border-width: 2px;
+  background-color: #e0bc75;
+  color: white;
+  transition: 300ms;
+  width: 13.5vw;
+  height: 3vw;
+}
+
+#work button:hover {
+  border-color: #e0bc75;
+  background-color: white;
+  color: #e0bc75;
+}
+
+#articles {
+  margin: auto;
+}
+
+#articles img {
+  width: 25vw;
+  margin: 1vw 1vw 0 1vw;
+  border-radius: 5px;
+}
+
+.banner{
+  background: url(../banner.jpg);
+  height: 270px;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  margin-top: -25px;
+}
+.banner p:nth-child(1){
+  font-size: 25px;
+  padding-top: 5%;
+  margin-bottom: -15px;
+}
+.banner p:nth-child(2){
+  font-size: 30px;
+  font-weight: bold;
+}
+.banner button{
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  border: 3px solid #f6ca78;
+  padding: 10px;
+  background-color: #f6ca78;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.banner button:hover{
+  background: none;
+  color: #f6ca78;
+}
+
+.last{
+  padding-top: 50px;
+  display: flex;
+  color: white;
+  border: 2px solid #333;
+  height: 400px;
+  background-color: #333;
+  font-family: "Century Gothic",sans-serif;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.last div:nth-child(1) img{
+  margin-bottom: 30px;
+}
+.last div{
+  width: 25%;
+}
+.last .grey{
+  opacity: 0.7;
+}
+.last a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.last .opa:hover{
+  opacity: 0.5;
+}
+.last .opa:focus{
+  color: rgb(114, 114, 250);
+}
+.last .logo{
+  display: flex;
+  margin-bottom: 30px;
+}
+.last .logo img{
+  width: 20px;
+  height: 25px;
+  margin-right: 20px;
+  margin-left: -2px;
+  cursor: pointer;
+}
