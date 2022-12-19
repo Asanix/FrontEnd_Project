@@ -670,7 +670,6 @@
   margin-right: -20.5vw;
   margin-top: -35vw;
   z-index: 2000;
-  transition: margin-right 5s;
  }
 
 #mySidebar a {
