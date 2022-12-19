@@ -233,7 +233,7 @@ body{
 }
 
 .picture .pic:nth-child(1){
-    background: url(pic1.jpg);
+    background: url(../pic1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -250,7 +250,7 @@ body{
     padding: 7.3% 5%;
 }
 .picture .pic:nth-child(2){
-    background: url(pic2.jpg);
+    background: url(../pic2.jpg);
 }
 .picture .pic div p:nth-child(1){
     color: white;
