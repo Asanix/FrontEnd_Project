@@ -1,10 +1,13 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resoures</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
 </head>
 <style>
 *{
@@ -48,7 +51,7 @@
     color:#e0bc75;
     text-decoration:underline;
     opacity: 1;
-    transition: all .07s  ease-in-out;
+    transition: all .07s ease-in-out;
 }
 
 .navbar-wrap{
@@ -85,126 +88,103 @@ h1{
     padding-left: 1.25rem;
     border-left:0.125rem solid #e0bc75;
     color:#adadad;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
 }
-.gold{
-    border:solid #e0bc75;
-    border-width:0.063rem;
-    height: 0;
+.contact-form{
+  width:calc(100%-20px);
+  max-width: 500px;
+  background-color: #e0bc75;
+  padding: 50px 40px;
 }
-.cards-f{
+.input-control{
+  margin-bottom:12px;
+  position: relative;
+}
+
+.input-control input{
+  width: 80%;
+  height: 50px;
+  border:none;
+  background-color: white;
+}
+.submit{
+  width: 150px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+.block{
+  display: flex;
+  justify-content:space-evenly;
+
+}
+.contact-info{
+  background-color: #bab2b2;
+  border: 20px solid black;
+  width:calc(100%-20px);
+  max-width: 500px;
+  padding: 50px 40px;
+}
+a{
+  text-decoration: none;
+  color: #e0bc75;
+}
+.clients{
+    background-color: #f8f8f8;
+    margin-top: 5rem;
+    font-weight: 300;
+    padding: 15px;
+    font-style: italic;
+    font-family: georgia,serif;
+    height: 350px;
+}
+.blockss{
     display: flex;
     justify-content:space-evenly;
 }
-.card-f{
-    margin: 0.313rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border:0.063rem solid rgba(54, 54, 54, 0.356);
-    width: 24rem;
-    height: 33rem;
+.clients h2{
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+}
+.client1{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.client2{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .img1{
-    margin:0.625rem;
-    width:21rem;
-    height:30rem;
-    background-size:cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 .img2{
-    margin:0.625rem;
-    width:21rem;
-    height: 30rem;
-    background-size:cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
-.img3{
-    margin:0.625rem;
-    width:21rem;
-    height: 30rem;
-    background-size:cover;
+.fblock{
+  font-weight: 600;
+  font-family: georgia,serif;
 }
-.img4{
-    margin:0.625rem;
-    width:21rem;
-    height:30rem;
-    background-size:cover;
-}
-.img5{
-    margin:0.625rem;
-    width:21rem;
-    height:30rem;
-    background-size:cover;
-}
-.img6{
-    margin:0.625rem;
-    width:21rem;
-    height:30rem;
-    background-size:cover;
-}
-.img7{
-    margin:0.625rem;
-    width:21rem;
-    height:30rem;
-    background-size:cover;
+.sblock{
+  font-weight: 600;
+  font-family: georgia,serif;
 }
 
-.btn{
-    background-color:#e0bc75;
-    color: white;
-    width: 21rem;
-    height:3rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-    border: solid #e0bc75;
-    margin-bottom: 0.625rem;
-}
-.btn:hover{
-    background-color: white;
-    color: #e0bc75;
-    font-weight: 600;
-    border-color:#e0bc75;
-}
-
-.cards-s{
-    margin-top: 1.875rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-.card-s{
-    margin: 0.313rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border:0.063rem solid rgba(54, 54, 54, 0.356);
-    width: 24rem;
-    height: 33rem;
-}
-.cards-t{
-    margin-top: 1.875rem;
-    margin-left: 4.935rem;
-    display: flex;
-    justify-content:left;
-}
-.card-t{
-    margin:0.313rem;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    background-color: white;
-    border:0.063rem solid rgba(54, 54, 54, 0.356);
-    width: 24rem;
-    height: 33rem;
-}
 .subfooter{
     position:relative;
     text-align:center;
     color:black;
     width: 100%;
     height: 400px;
-    padding: 75px 0;
-    margin-bottom: -80px;
 }
 .sub{
     width: 100%;
@@ -217,13 +197,13 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-input{
+.input-control-e input{
     height: 40px;
     width: 400px;
     border: 1px solid rgba(255, 255, 255, 0.67);
 
 }
-.submit{
+.submitt{
     height: 50px;
     width: 400px;
     background-color: #333;
@@ -281,15 +261,12 @@ input{
 
 
 </style>
-
 <body>
 <header>
 <div class="navbar">
     
     <div class="container">
-    
-        <img src ="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\logo-dark.png" alt="">
-        
+        <img src ="logo-dark.png" alt="">
         <div class="navbar-wrap">
             <ul class="navbar-menu">
                 <li><a href="#">WORK</a></li>
@@ -308,71 +285,99 @@ input{
 
 <div class="main">
     <div class="first">
-        <h1>Resources To Help You Succeed</h1>
-        <p class="subpage">We’ve created content to help you transform your digital presence. <br>
-            Download one of our FREE guides, or sign up to receive FREE lead generating strategies below.
+        <h1>Get Results. Contact Us Today:</h1>
+        <p class="subpage">Your brand’s success matters to us. Contact us to find out how our digital <br>
+        experts can help you take your brand to the next level.
         </p>
     </div>
-    
-    <div class="line"><hr class="gold"></div>
-    
-    <div class="cards-f">
-    <div class="card-f">
-        <img class="img1" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\Google-Ads_cover.jpg" alt="">
-        <button class="btn" onclick="document.location ='https://mediaboom.com/google-ads-cost-calculator/'">DOWNLOAD CALCULATOR</button>
-    </div>
-    
-    <div class="card-f">
-        <img class="img2" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\must-haves-updated.jpg" alt="">
-        <button class="btn" onclick="document.location ='https://mediaboom.com/whitepaper-website-must-haves/'">DOWNLOAD NOW</button>
-    </div>
-
-    <div class="card-f">
-        <img class="img3" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\digital-strategies.jpg" alt="">
-        <button class="btn" onclick="document.location = 'https://mediaboom.com/digital-strategies/'">DOWNLOAD NOW</button>
-    </div>
 </div>
 
-<div class="cards-s">
-    <div class="card-s">
-        <img class="img4" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\luxury-brand-target-audience.jpg" alt="">
-        <button class="btn" onclick="document.location = 'https://mediaboom.com/target-audience-luxury-brands/'">DOWNLOAD NOW</button>
+<div class="block">
+    <div class="form">
+        <form method="POST" action="client.php" class="contact-form">
+        <h2>Fill out the form below to get started:</h2><br>
+      <div class="input-control">
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>  
+      </div><br>
+      <div class="input-control">
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      </div><br>
+      <div class="input-control">
+      <input type="number" name="phone" id="phone" placeholder="Phone" required>
+      </div><br>
+      <div class="input-control">
+        <input type="textarea" name="message" id="message" placeholder="Message" required>
+      </div><br>
+      <div class="input-control-check">
+        <input type="checkbox" name="checkbox" id="checkbox" required> Subscribe to Newsletter
+      </div><br>
+      <button type="submit" class="submit" name="save_client" >CONTACT US</button>
+    </form>
     </div>
+    
+    <div class="conatact-info">
+    <h2>General Inquiries</h2><br>
+    <p>Have a question… or just want to say hello? Get in touch:</p><br>
+    <a href="info@mediaboom.com" style="color:#e0bc75" ">INFO@MEDIABOOM.COM</a><br>
+    <a href="tel:+18007103975" style="color: #e0bc75;">800.710.3975</a><br><br>
+    
+    <h2>Our Location</h2>
+    <p>73 Church St</p><br>
+    <p>Guilford, CT 06437</p><br>
+    <a href="https://www.google.com/maps" style="color:#e0bc75">GET DIRECTIONS></a><br><br>
+    
+    <h2>Mediaboom Newsletter</h2>
+    <p>Exclusive digital marketing & advertising insights</p><br>
+    <a href="https://mediaboom.com/newsletter-signup/" style="color:#e0bc75">SIGN UP HERE</a>
 
-    <div class="card-s">
-        <img class="img5" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\12-Ways-to-Drive-Traffic_Cover.jpg" alt="">
-        <button class="btn" onclick="document.location = 'https://mediaboom.com/medspa-website/'">DOWNLOAD NOW</button>
     </div>
+  </div>
 
-    <div class="card-s">
-        <img class="img6" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\private-equity.jpg" alt="">
-        <button class="btn" onclick="document.location = 'https://mediaboom.com/whitepaper-private-equity/'">DOWNLOAD NOW</button>
+    <div class="clients">
+      <h2>What Our Clients Say</h2>
+    <div class="blockss">
+    <div class="flocks">
+        <div class="fblock">
+          <p>“I have worked with Mediaboom on several projects and <br> 
+          had nothing but stellar experiences!”</p>
+        </div>
+        <div class="client1">
+        <img src="homer-liwag-color.png" alt="" class="img1">
+          <p><strong> HOMER LIWAG</strong><br>
+          Creative Director, Copperfield Design</p>
+        </div>
+      </div>
+      
+      <div class="slocks">
+        <div class="sblock">
+          <p>“I could not have asked for a more talented, creative <br>
+          and patient partner for our website & branding project.”</p>
+        </div>
+        <div class="client2">
+          <img src="Joanna-Sherriff_03.png" alt="" class="img2">
+          <p><strong>JOANNA SHERRIFF</strong><br>
+          Director of Corporate Sales at Elegant Banquets </p>
+        </div>
+      </div>
     </div>
-</div>
-
-<div class="cards-t">
-    <div class="card-t">
-        <img class="img7" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\lead-strategies-4-1187x1536.jpg" alt="">
-        <button class="btn" onclick="document.location = 'https://mediaboom.com/website-optimization/'">GET MY FREE AUDIT</button>
     </div>
-</div>    
-
+    
     <div class="subfooter">
-        <img class="sub" src="C:\Users\77084906517\OneDrive\Документы\GitHub\Frontend-Project\resources\newsletter-bg.jpg" alt="...">
+        <img class="sub" src="newsletter-bg.jpg" alt="...">
         <div class="text-c">
-        <h2 style="font-style: italic;">Subscribe To Mediaboom's Newsletter</h2><br>
+        <h2 style="font-style:italic;">Subscribe To Mediaboom's Newsletter</h2><br>
             <p>Digital advertising never rests, and neither do we. Receive exclusive insights on <br> 
                 what’s new, what’s hot, and what’s challenging the rules in digital advertising and <br>
                 marketing so you’re always the first to know.</p><br>
                 <form id="form" onsubmit="onSubmit(event)" action="#">
-                    <div class="input-control">
-                        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                    <div class="input-control-e">
+                        <input id="emaill" name="emaill" type="email" placeholder="Enter your email" required>
                     </div><br>
-                    <button class="submit" type="submit">RECEIVE INSIGHTS NOW</button>
+                    <button class="submitt" type="submit">RECEIVE INSIGHTS NOW</button>
                 </form>
             </div>
-        </div>
-
+    </div>
+    </div>
     <div class="last">
             <div>
                 <img src="../mediaboom.png">
@@ -403,16 +408,15 @@ input{
             </div>
             <div>
                 <p>LATEST NEWS</p><br>
-                <a class="opa" href="https://mediaboom.com/news/online-review-management/">Online Review Management – What<br>
-                It Is and Why You Need it </a> <br>
+                <a class="opa" href="https://mediaboom.com/news/online-review-management/">Online Review Management – What It Is and Why You Need it </a>
                 <a class="opa" href="https://mediaboom.com/news/luxury-hotel-social-media-marketing/">Top 10 Strategies for Luxury Hotel Social Media Marketing</a><br>
                 <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
             </div>
         </div>
-        
-        <script>
-        function onSubmit(event){
-            let email = document.getElementById('email').value
+    
+    <script>
+      function onSubmit(event){
+            let email = document.getElementById('emaill').value;
             console.log(email);
             
             let data = event.target;
@@ -421,11 +425,13 @@ input{
             let form_data_obj = Object.fromEntries(formdata);
             console.log(form_data_obj);
 
-            localStorage.setItem('email',form_data_obj.email);
+            localStorage.setItem('emaill',form_data_obj.email);
             
             event.preventDefault();
         }
         </script>
+    </script>
 
-    </body>
+
+</body>
 </html>

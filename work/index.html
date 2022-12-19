@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Work - Mediaboom</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function(){
-            $("#all").click(function(){
-                $("#first").show();
-                $("#second").show();
-                $("#three").show();
-                $("#four").show();
-                $("#five").show();
-                $("#six").show();
-                $("#seven").show();
-                $("#eight").show();
-                $("#nine").show();
-                $("#ten").show();
-             });
-            $("#website").click(function(){
+        $(document).ready(function () {
+            $("#all").click(function () {
                 $("#first").show();
                 $("#second").show();
                 $("#three").show();
@@ -33,7 +24,19 @@
                 $("#nine").show();
                 $("#ten").show();
             });
-            $("#seo").click(function(){
+            $("#website").click(function () {
+                $("#first").show();
+                $("#second").show();
+                $("#three").show();
+                $("#four").show();
+                $("#five").show();
+                $("#six").show();
+                $("#seven").show();
+                $("#eight").show();
+                $("#nine").show();
+                $("#ten").show();
+            });
+            $("#seo").click(function () {
                 $("#first").hide();
                 $("#second").hide();
                 $("#three").hide();
@@ -45,7 +48,7 @@
                 $("#nine").hide();
                 $("#ten").show();
             });
-            $("#branding").click(function(){
+            $("#branding").click(function () {
                 $("#first").hide();
                 $("#second").show();
                 $("#three").hide();
@@ -57,7 +60,7 @@
                 $("#nine").hide();
                 $("#ten").show();
             });
-            $("#application").click(function(){
+            $("#application").click(function () {
                 $("#first").hide();
                 $("#second").hide();
                 $("#three").hide();
@@ -69,7 +72,7 @@
                 $("#nine").hide();
                 $("#ten").hide();
             });
-            $("#email").click(function(){
+            $("#email").click(function () {
                 $("#first").show();
                 $("#second").hide();
                 $("#three").hide();
@@ -81,7 +84,7 @@
                 $("#nine").hide();
                 $("#ten").hide();
             });
-            $("#print").click(function(){
+            $("#print").click(function () {
                 $("#first").hide();
                 $("#second").hide();
                 $("#three").hide();
@@ -96,11 +99,12 @@
         });
     </script>
 </head>
+
 <body>
     <div class="topnav">
         <div id="nav">
             <a id="logo" href="../index.html"><img src="../logo-dark.png"></a>
-            <a id="contact" href="">CONTACT</a>
+            <a id="contact" href="">CONTACT</a>*
             <a href="" class="moovingLink">INSIGHTS</a>
             <a href="" class="moovingLink">RESOURCES</a>
             <a href="" class="moovingLink">SERVICES</a>
@@ -110,9 +114,39 @@
         </div>
     </div>
 
-    <h1 style="font-size: 5vw; margin: 7.5% 0 0 7.5%; font-family: georgia,serif; font-style: italic;">Work</h1>
-    <p style="font-size: 1.1vw ;border-style: solid; border-color: #e0bc75; border-width: 0 0 0 2px; width: 35%; margin-left:7.5%; padding-left: 1%;">
-        See how these recent projects went from concept to gorgeous outcome while delivering the promised results for our clients.
+    <div id="openNav">
+        <a href="../index.html"><img src="../logo-dark.png"></a>
+        <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mySidebar">
+        <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+        <div id="links">
+            <a href="">
+                <p>WORK</p>
+            </a>
+            <a href="../Industries/index.html">
+                <p>INDUSTRIES</p>
+            </a>
+            <a href="../our_agency/index.html">
+                <p>OUR AGENCY</p>
+            </a>
+            <a href="../services/index.html">
+                <p>SERVICES</p>
+            </a>
+            <a href="../resources/resourses.html">
+                <p>RESOURCES</p>
+            </a>
+            <a href="../contact/contact.php">
+                <p>CONTACT</p>
+            </a>
+        </div>
+    </div>
+
+    <h1 id="work" style="margin: 7.5% 0 0 7.5%; color: black; font-family: georgia,serif; font-style: italic;">Work</h1>
+    <p id="workDesc"
+        style="color: black; border-style: solid; border-color: #e0bc75; border-width: 0 0 0 2px; margin-left:7.5%; padding-left: 1%;">
+        See how these recent projects went from concept to gorgeous outcome while delivering the promised results for
+        our clients.
     </p>
 
     <div id="category">
@@ -235,7 +269,8 @@
                 73 Church St <br>
                 Guilford, CT 06437 <br>
                 <a class="opa" href="">info@mediaboom.com</a><br>
-                <a class="opa" href="">800.710.3975</a></p>
+                <a class="opa" href="">800.710.3975</a>
+            </p>
         </div>
         <div>
             <p>FOLLOW US</p>
@@ -251,10 +286,11 @@
         <div>
             <p>OUR SERVICES</p>
             <p class="grey"><a class="opa" href="https://mediaboom.com/services/digital/">Digital</a><br>
-            <a class="opa" href="https://mediaboom.com/services/advertising/">Advertising</a><br>
-            <a class="opa" href="https://mediaboom.com/services/marketing/">Marketing</a><br>
-            <a class="opa" href="https://mediaboom.com/services/content-creation/">Content Creation</a><br>
-            <a class="opa" href="https://mediaboom.com/specialty-services/">Industry Specific</a></p>
+                <a class="opa" href="https://mediaboom.com/services/advertising/">Advertising</a><br>
+                <a class="opa" href="https://mediaboom.com/services/marketing/">Marketing</a><br>
+                <a class="opa" href="https://mediaboom.com/services/content-creation/">Content Creation</a><br>
+                <a class="opa" href="https://mediaboom.com/specialty-services/">Industry Specific</a>
+            </p>
         </div>
         <div>
             <p>LATEST NEWS</p>
@@ -262,6 +298,34 @@
             <p class="grey"><a href="">Top 10 Strategies for Luxury Hotel Social Media Marketing</a></p>
             <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
         </div>
-     </div>
+    </div>
+
+    <div id="message">
+        <button onclick="show()" id="but"></button>
+    </div>
+
+    <div id="typing">
+        <div id="hum">
+            <div>
+                <img src="../Our_agency/era.jpg" alt="">
+                <p>Hi there!</p>
+                <button onclick="show()">&#215;</button>
+            </div>
+        </div>
+        <div id="mes">
+            <div>
+                <p>Welcome back! You can begin by asking your question below. Someone will be with you shortly.</p>
+            </div>
+        </div>
+        <div id="type">
+            <form name="form" id="form1">
+                <input id="text" type="text" name="text" placeholder="Enter your message...">
+            </form>
+        </div>
+        <div id="send">
+            <button type="submit" id="send_but" onclick="empty()"></button>
+        </div>
+    </div>
 </body>
+
 </html>

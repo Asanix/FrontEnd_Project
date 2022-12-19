@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: "Century Gothic",sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-weight: 300;
   color: white;
   scroll-behavior: smooth;
@@ -8,12 +8,12 @@
 
 .topnav {
   overflow: hidden;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.75);
 }
-
 
 .topnav a {
   margin: 1.20rem 0.5rem;
@@ -21,13 +21,11 @@
   float: right;
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: 500;
   color: black;
-  font-weight: bold;
 }
 
 .moovingLink {
-  background: 
+  background:
     linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
     linear-gradient(to right, #e0bc75, #e0bc75);
   background-size: 100% 0.1em, 0 0.1em;
@@ -59,28 +57,62 @@
 
 #desc {
   width: 100%;
-  height: 780px;
+  height: 100vh;
 }
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
+    opacity: 1;
   }
+}
+
+#videoContainer {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  clip-path: 0 0;
+  transform: translatez(0);
+}
+
+#digital {
+  height: 10vw;
+  font-size: 15vw;
+  position: absolute;
+  top: 20vw;
+  width: 100%;
+}
+
+#digital {
+  top: 15vw;
+}
+
+#digital h3 {
+  margin-bottom: -10vw;
 }
 
 #desc video {
+  transform: translatez(0);
   position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+
+  margin: auto;
+
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #desc h1 {
-  position: absolute;
-  font-size: 40px;
+  font-size: 2vw;
   margin-left: 7.5%;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
@@ -88,7 +120,7 @@
 }
 
 #desc h3 {
-  position: absolute;
+  font-size: 1vw;
   width: 45%;
   margin-left: 7.5%;
   animation: fadeInAnimation ease 2s;
@@ -97,12 +129,10 @@
 }
 
 #desc button {
-  position: absolute;
-  width: 25%;
+  width: 30vw;
   margin-left: 7.5%;
   height: 2.5rem;
-  top: 60%;
-  background-color: #e0bc75; 
+  background-color: #e0bc75;
   color: white;
   border-color: #e0bc75;
   transition: 300ms;
@@ -119,7 +149,7 @@
 
 #brand {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
   margin-top: 2vw;
   animation: fadeInAnimation ease 2s;
@@ -138,15 +168,15 @@
   margin-left: 7.5%;
 }
 
-#brand-desc img{
+#brand-desc img {
   margin-left: 2.5%;
 }
 
 #brand-desc button {
   width: 25%;
-  margin-top: 1rem; 
-  height: 2.5rem; 
-  background-color: #e0bc75; 
+  margin-top: 1rem;
+  height: 2.5rem;
+  background-color: #e0bc75;
   border-color: #e0bc75;
   border-style: solid;
   transition: 300ms;
@@ -163,12 +193,12 @@
   margin-right: 7.5%;
 }
 
-#brand-image img{
+#brand-image img {
   width: 95%;
 }
 
 #andrew {
-  width: 45%; 
+  width: 45%;
   padding-left: 2rem;
 }
 
@@ -181,7 +211,7 @@
 
 #built {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
   background-color: #333333;
@@ -203,15 +233,15 @@
   margin-right: 7.5%;
 }
 
-#built-desc img{
+#built-desc img {
   margin-left: 2.5%;
 }
 
 #built-desc button {
   width: 25%;
-  margin-top: 1rem; 
-  height: 2.5rem; 
-  background-color: #e0bc75; 
+  margin-top: 1rem;
+  height: 2.5rem;
+  background-color: #e0bc75;
   border-color: #e0bc75;
   border-style: solid;
   transition: 300ms;
@@ -233,7 +263,7 @@
 }
 
 #don {
-  width: 45%; 
+  width: 45%;
   padding-left: 2rem;
 }
 
@@ -246,7 +276,7 @@
 
 #exp {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
   padding-top: 3rem;
@@ -267,15 +297,15 @@
   margin-left: 7.5%;
 }
 
-#exp-desc img{
+#exp-desc img {
   margin-left: 2.5%;
 }
 
 #exp-desc button {
   width: 25%;
-  margin-top: 1rem; 
-  height: 2.5rem; 
-  background-color: #e0bc75; 
+  margin-top: 1rem;
+  height: 2.5rem;
+  background-color: #e0bc75;
   border-color: #e0bc75;
   border-style: solid;
   transition: 300ms;
@@ -297,7 +327,7 @@
 }
 
 #homer {
-  width: 45%; 
+  width: 45%;
   padding-left: 2rem;
 }
 
@@ -317,14 +347,14 @@
 }
 
 #founded {
-  margin-left: 7.5rem;
+  margin-left: 5%;
   width: 45%;
   margin-top: -17%;
   margin-right: 5%;
 }
 
 #founded h3 {
-  font-family: georgia,serif; 
+  font-family: georgia, serif;
   font-style: italic;
   font-size: 3.5vw;
 }
@@ -348,7 +378,7 @@
   font-weight: bold;
   font-size: 2.5vw;
   color: #e0bc75;
-  margin-left:20%;
+  margin-left: 20%;
 }
 
 #fourPoints p {
@@ -363,6 +393,14 @@
   margin-bottom: 3vh;
 }
 
+#ourServices {
+  font-size: 20px;
+}
+
+#ourServicesDesc {
+  font-size: 15px;
+}
+
 #services {
   display: flex;
   width: 75%;
@@ -370,7 +408,7 @@
   margin-right: 5%;
 }
 
-#services div{
+#services div {
   margin-left: 1.5%;
   margin-right: 1.5%;
   margin-top: 3.5%;
@@ -431,7 +469,7 @@
   padding-top: 3.5vw;
   color: black;
   text-align: center;
-  font-family: georgia,serif;
+  font-family: georgia, serif;
   font-style: italic;
   font-size: 2.1vw;
 }
@@ -467,6 +505,10 @@
 
 #articles {
   margin: auto;
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  margin-bottom: 2.5vw;
 }
 
 #articles img {
@@ -475,8 +517,18 @@
   border-radius: 5px;
 }
 
-.banner{
-  background: url(../banner.jpg);
+#articles a {
+  margin-bottom: 10%;
+}
+
+#articles div p {
+  font-size: 1.5vw;
+  color: #e0bc75;
+  margin: 1vw;
+}
+
+.banner {
+  background: url(banner.jpg);
   height: 270px;
   color: white;
   background-position: center;
@@ -486,18 +538,18 @@
   margin-top: -25px;
 }
 
-.banner p:nth-child(1){
+.banner p:nth-child(1) {
   font-size: 25px;
   padding-top: 5%;
   margin-bottom: -15px;
 }
 
-.banner p:nth-child(2){
+.banner p:nth-child(2) {
   font-size: 30px;
   font-weight: bold;
 }
 
-.banner button{
+.banner button {
   font-weight: bold;
   color: white;
   font-size: 16px;
@@ -508,37 +560,37 @@
   transition: 0.3s;
 }
 
-.banner button:hover{
+.banner button:hover {
   background: none;
   color: #f6ca78;
 }
 
-.last{
+.last {
   padding-top: 50px;
   display: flex;
   color: white;
   border: 2px solid #333;
   height: 400px;
   background-color: #333;
-  font-family: "Century Gothic",sans-serif;
+  font-family: "Century Gothic", sans-serif;
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.last div:nth-child(1) img{
+.last div:nth-child(1) img {
   margin-bottom: 30px;
 }
 
-.last div{
+.last div {
   width: 25%;
 }
 
-.last .grey{
+.last .grey {
   opacity: 0.7;
 }
 
-.last a{
+.last a {
   text-decoration: none;
   color: white;
   transition: 0.3s;
@@ -548,20 +600,20 @@
   color: white;
 }
 
-.last .opa:hover{
+.last .opa:hover {
   opacity: 0.5;
 }
 
-.last .opa:focus{
+.last .opa:focus {
   color: rgb(114, 114, 250);
 }
 
-.last .logo{
+.last .logo {
   display: flex;
   margin-bottom: 30px;
 }
 
-.last .logo img{
+.last .logo img {
   width: 20px;
   height: 25px;
   margin-right: 20px;
@@ -577,24 +629,472 @@
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
- .topnav {
+#message {
+  width: 60px;
+  position: fixed;
+  bottom: 36px;
+  left: 93%;
+  z-index: 5;
+}
+
+#message button {
+  background: url(../message.png);
+  border-radius: 35px;
+  border: none;
+  background-color: #093587;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(100%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#message button:hover {
+  background: url(../pen.png);
+  border-radius: 35px;
+  border: none;
+  background-color: #f8a900;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#typing {
+  border-radius: 20px;
+  background-color: white;
+  position: fixed;
+  width: 350px;
+  height: 500px;
+  right: 4%;
+  bottom: 30px;
   display: none;
- }
+}
 
- #openNav {
-  display: grid;
- }
+#typing #hum {
+  height: 25%;
+  border-radius: 19px 19px 0px 0px;
+  background-color: #f6ca78;
+}
 
- #mySidebar {
-  position: sticky;
-  top: 0;
-  float: right;
-  height: 100vw;
-  width: 20vw;
-  margin-right: -20.5vw;
-  z-index: 999;
-  border: black solid;
-  transition: margin-right 5s;
- }
+#typing #hum div {
+  display: flex;
+}
+
+#typing #hum img {
+  width: 75px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 40px;
+}
+
+#typing #hum div p {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+
+#typing #hum div button {
+  margin-left: 60px;
+  height: 40px;
+  width: 40px;
+  margin-top: 45px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background: none;
+  transition: 0.3s;
+  padding-top: 4px;
+  padding-right: 7px;
+}
+
+#typing #hum div button:hover {
+  background: rgba(68, 68, 68, 0.559);
+}
+
+#typing #mes {
+  height: 55%;
+}
+
+#typing #mes div {
+  border-radius: 20px;
+  background-color: #4f4f4f20;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 250px;
+  height: 80px;
+}
+
+#typing #mes div p {
+  color: black;
+  padding: 14px 5px 10px 15px;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 14px;
+}
+
+#typing #type {
+  height: 15%;
+  border-top: 2px solid rgba(128, 128, 128, 0.582);
+  border-radius: 0px 0px 19px 19px;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+}
+
+#typing #type input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+#typing #send {
+  width: 60px;
+  position: fixed;
+  bottom: 36px;
+  left: 93%;
+  z-index: 5;
+}
+
+#typing #send button {
+  background: url(../send.png);
+  border-radius: 35px;
+  border: none;
+  background-color: #093587;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(100%);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0px;
+}
+
+#typing #send button:hover {
+  border-radius: 35px;
+  border: none;
+  background-color: #f8a900;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+form #text.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1100px) {
+  .topnav {
+    display: none;
+  }
+
+  #openNav {
+    display: flex;
+    position: sticky;
+    height: 10vw;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 999;
+  }
+
+  #openNav a {
+    margin: 3vw;
+    margin-left: 3vw;
+  }
+
+  #openNav i {
+    filter: brightness(0.5);
+    font-size: 2vw;
+    margin: 3.5vw;
+  }
+
+  #openNav button {
+    right: 0;
+    background: none;
+    border-style: none;
+  }
+
+  #mySidebar {
+    position: sticky;
+    top: 0;
+    float: right;
+    height: 100vh;
+    width: 20vw;
+    background-color: #333;
+    margin-right: -20.5vw;
+    margin-top: -35vw;
+    z-index: 2000;
+  }
+
+  #mySidebar a {
+    text-decoration: none;
+  }
+
+  #mySidebar p {
+    margin: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #mySidebar button {
+    position: absolute;
+    background: none;
+    right: 0;
+    margin: 1.75vw 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-style: none;
+  }
+
+  #mySidebar button i {
+    font-size: 3vw;
+  }
+
+  #desc h1 {
+    font-size: 5vw;
+  }
+
+  #desc h3 {
+    font-size: 3vw;
+    width: 85%;
+  }
+
+  #desc button {
+    font-size: 2.5vw;
+    height: 10vw;
+  }
+
+  #digital {
+    top: 50vw;
+  }
+
+  #brand {
+    display: grid;
+  }
+
+  #brand-desc {
+    width: 90%;
+  }
+
+  #brand-desc img {
+    margin-top: 2.5%;
+  }
+
+  #brand-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #andrew {
+    width: 65%;
+  }
+
+  #andrew p {
+    font-size: 3vw;
+  }
+
+  #built {
+    display: grid;
+    margin-top: 2vw;
+  }
+
+  #built p {
+    padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+    line-height: 1.85rem;
+  }
+
+  #built-desc {
+    width: 90%;
+    margin-left: 7.5%;
+  }
+
+  #built-desc img {
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  #built-desc button {
+    width: 25%;
+    margin-top: 1rem;
+    height: 2.5rem;
+  }
+
+  #built-image {
+    width: 90%;
+    margin-right: 7.5%;
+  }
+
+  #built-image img {
+    width: 95%;
+  }
+
+  #don {
+    width: 65%;
+    padding-left: 2rem;
+  }
+
+  #don p {
+    font-size: 3vw;
+    padding: 0;
+    margin: 0 0 0.5rem;
+  }
+
+  #exp {
+    display: grid;
+  }
+
+  #exp {
+    display: grid;
+  }
+
+  #exp-desc {
+    width: 90%;
+  }
+
+  #exp-desc img {
+    margin-top: 2.5%;
+  }
+
+  #exp-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #homer {
+    width: 65%;
+  }
+
+  #homer p {
+    font-size: 3vw;
+  }
+
+  #founded h3 {
+    font-size: 4vw;
+  }
+
+  #founded p {
+    font-size: 1.85vw;
+  }
+
+  #fourPoints h4 {
+    margin-left: 10%;
+    font-size: 5vw;
+  }
+
+  #fourPoints div ul li {
+    margin: 0 0 2.5vw 0;
+  }
+
+  #fourPoints div ul li p {
+    display: none;
+  }
+
+  #fourPoints li {
+    width: 10vw;
+  }
+
+  #services {
+    display: grid;
+    margin: 0;
+    width: 100%;
+  }
+
+  #services div {
+    width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #services div img {
+    width: 100%;
+  }
+
+  #services div button {
+    height: 10vw;
+  }
+
+  #articles {
+    display: grid;
+    width: 90%;
+  }
+
+  #articles div img {
+    width: 100%;
+  }
+
+  #articles div a p {
+    font-size: 3vw;
+  }
+
+  .banner p:nth-child(1) {
+    font-size: 4vw;
+    padding-top: 5%;
+    margin-bottom: 10px;
+  }
+
+  .banner p:nth-child(2) {
+    font-size: 4vw;
+  }
+
+  .last {
+    padding-top: 1vw;
+    display: block;
+    color: white;
+    border: 2px solid #333;
+    height: 1000px;
+    background-color: #333;
+    font-family: "Century Gothic", sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .last div {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .message {
+    width: 80px;
+    position: fixed;
+    bottom: 30px;
+    left: 80%;
+  }
+  
+  .message button {
+    background: url(message.png);
+    border-radius: 80px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
