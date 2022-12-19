@@ -4,6 +4,10 @@ body {
   
   .topnav {
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
   }
   
   .topnav a {
@@ -283,23 +287,70 @@ body {
     background: none;
     color: #f6ca78;
 }
+.last{
+    padding-top: 50px;
+    display: flex;
+    color: white;
+    border: 2px solid #333;
+    height: 400px;
+    background-color: #333;
+    font-family: "Century Gothic",sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.last div:nth-child(1) img{
+    margin-bottom: 30px;
+}
+.last div{
+    width: 25%;
+}
+.last .grey{
+    opacity: 0.7;
+}
+.last div:nth-child(4) a{
+    color: white;
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.last .opa:hover{
+    opacity: 0.5;
+}
+.last .opa:focus{
+    color: rgb(114, 114, 250);
+}
+.last .logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+.last .logo img{
+    width: 20px;
+    height: 25px;
+    margin-right: 20px;
+    margin-left: -2px;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 980px) {
     .photos .row{
-        display: inline-block;
+        display: inline-block;  
+        margin-left: 1%;
     }
     .photos .row .one{
-        width: 100%;
+        width: 94%;
     }
     .photos .two{
-        width: 100%;
+        width: 94%;
     }
     .photos .three{
-        width: 100%;
+        width: 95%;
     }
     .photos .four{
-        width: 100%;
+        width: 95%;
     }
     .photos .five{
         width: 100%;
@@ -308,10 +359,10 @@ body {
         width: 100%;
     }
     .photos .seven{
-        width: 100%;
+        width: 94%;
     }
     .photos .eight{
-        width: 100%;
+        width: 94%;
     }
     .photos p:nth-child(1){
         font-weight: normal;
@@ -326,5 +377,22 @@ body {
         padding-left: 10px;
         text-align: left;
         margin-top: -30px;
+    }
+    .last{
+        padding-top: 50px;
+        display: block;
+        color: white;
+        border: 2px solid #333;
+        height: 1000px;
+        background-color: #333;
+        font-family: "Century Gothic",sans-serif;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .last div{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }

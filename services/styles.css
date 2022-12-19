@@ -3,6 +3,10 @@ body{
 }  
   .topnav {
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
   }
   
   .topnav a {
@@ -17,6 +21,8 @@ body{
     color: white;
     scroll-behavior: smooth;
     color: black;
+    position: sticky;
+    top: 0px;
   }
   
   #logo {
@@ -146,4 +152,271 @@ body{
     padding: 10px 20px;
     font-family: "Century Gothic",sans-serif;
     font-size: 18px;
+    transition: 0.3s;
+}
+.block .col .row a button:hover{
+    color: #fed994;
+}
+.block .col .row a button:focus{
+    color: #6b63e0;
+}
+
+.att_text{
+    text-align: center;
+    font-family: "Century Gothic",sans-serif;
+    color: #f3b543;
+    font-size: 40px;
+}
+.att{
+    display: block;
+    margin-left: 15%;
+}
+.att p{
+    text-align: center;
+}
+.att .col{
+    display: flex;
+}
+.att .col .row{
+    width: 40%;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.att .col .row p:nth-child(1){
+    font-family: georgia,serif;
+    font-style: italic;
+    font-size: 22px;
+}
+.att .col .row p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+}
+.story{
+    border-top: 2px solid #f3b543;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.story p:nth-child(1){
+    font-family: "Century Gothic",sans-serif;
+    font-size: 40px;
+    color: #f3b543;
+    margin-bottom: 0px;
+}
+.story p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+    font-size: 16px;
+    letter-spacing: 2;
+    margin-bottom: 60px;
+}
+.story .pic p:nth-child(1){
+    font-family: "Century Gothic",sans-serif;
+    color: #f3b543;
+    font-size: 40px;
+}
+.story .pic p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+    font-size: 18px;
+    letter-spacing: 2;
+}
+
+.picture{
+    display: flex;
+    justify-content: space-evenly;
+}
+.picture .pic{
+    width: 40%;
+    height: 300px;
+    cursor: pointer;
+}
+
+.picture .pic:nth-child(1){
+    background: url(pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.picture .pic .overlay{
+    text-align: left;
+    margin: 10px;
+    padding: 5% 3%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+.picture .pic .overlay:hover{
+    margin: 0px;
+    padding: 7.3% 5%;
+}
+.picture .pic:nth-child(2){
+    background: url(pic2.jpg);
+}
+.picture .pic div p:nth-child(1){
+    color: white;
+    font-size: 20px;
+}
+.picture .pic div p:nth-child(2){
+    color: white;
+    font-size: 24px;
+    font-family: georgia,serif;
+    font-style: italic;
+}
+.picture .pic div p:nth-child(3){
+    color: #f3b543;
+    font-size: 20px;
+    font-family: "Century Gothic",sans-serif;
+}
+.story a button{
+    margin-top: 40px;
+    border: 2px solid #f3b543;
+    background: none;
+    font-family: "Century Gothic",sans-serif;
+    color: #f3b543;
+    font-size: 16px;
+    padding: 8 18;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.story a button:hover{
+    opacity: 0.8;
+}
+.story a button:focus{
+    color: rgb(118, 118, 249);
+}
+.banner{
+    background: url(../banner.jpg);
+    height: 270px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    margin-top: -25px;
+}
+.banner p{
+    font-size: 25px;
+    padding-top: 80px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: georgia,serif;
+    
+}
+
+.banner button{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border: 3px solid #f6ca78;
+    padding: 10px;
+    background-color: #f6ca78;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner button:hover{
+    background: none;
+    color: #f6ca78;
+}
+.last{
+    padding-top: 50px;
+    display: flex;
+    color: white;
+    border: 2px solid #333;
+    height: 400px;
+    background-color: #333;
+    font-family: "Century Gothic",sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.last div:nth-child(1) img{
+    margin-bottom: 30px;
+}
+.last div{
+    width: 25%;
+}
+.last div:nth-child(4) a{
+    color: white;
+}
+.last .grey{
+    opacity: 0.7;
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.last .opa:hover{
+    opacity: 0.5;
+}
+.last .opa:focus{
+    color: rgb(114, 114, 250);
+}
+.last .logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+.last .logo img{
+    width: 20px;
+    height: 25px;
+    margin-right: 20px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    .text{
+        width: 95%;
+    }
+    .block .col{
+        display: inline;
+    }
+    .block .col .row{
+        width: 80%;
+        margin: 30px;
+    }
+    .att .col{
+        display: inline;
+    }
+    .att .col .row{
+        width: 80%;
+    }
+    .story .picture{
+        display: inline;
+    }
+    .story .picture .pic{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .picture .pic .overlay{
+        text-align: left;
+        padding: 5% 3%;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 0.3s;
+    }
+    .picture .pic .overlay:hover{
+        margin: 0px;
+        padding: 6.6% 5%;
+    }
+    .story a button{
+        margin-top: 10px;
+    }
+    .last{
+        padding-top: 50px;
+        display: block;
+        color: white;
+        border: 2px solid #333;
+        height: 1000px;
+        background-color: #333;
+        font-family: "Century Gothic",sans-serif;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .last div{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }

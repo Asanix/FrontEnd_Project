@@ -4,6 +4,10 @@ body {
   
   .topnav {
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
   }
   
   .topnav a {
@@ -237,10 +241,11 @@ body {
     font-family: "Century Gothic",sans-serif;
     color: #be7c00;
     border: 2px solid #be7c00;
-    padding: 10px 20px;
     background: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
+
 .banner{
     background: url(../banner.jpg);
     height: 270px;
@@ -291,6 +296,9 @@ body {
 }
 .last div{
     width: 25%;
+}
+.last div:nth-child(4) a{
+    color: white;
 }
 .last .grey{
     opacity: 0.7;
