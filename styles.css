@@ -8,7 +8,8 @@
 
 .topnav {
   overflow: hidden;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.75);
@@ -56,7 +57,7 @@
 
 #desc {
   width: 100%;
-  height: 780px;
+  height: 100vh;
 }
 
 @keyframes fadeInAnimation {
@@ -68,16 +69,49 @@
   }
 }
 
-#desc video {
+#videoContainer {
   position: absolute;
-  top: 0;
+  margin: auto;
   width: 100%;
-  z-index: -1;
+  height: 100%;
+        
+  overflow: hidden;
+  clip-path: 0 0;
+  transform: translatez(0);
+}
+
+#digital {
+  height: 10vw;
+  font-size: 15vw;
+  position: absolute; 
+  top: 20vw; 
+  width: 100%;
+}
+
+#digital {
+  top: 15vw;
+}
+
+#digital h3 {
+  margin-bottom: -10vw;
+}
+
+#desc video {
+  transform: translatez(0);
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;    
+
+  margin: auto;
+
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #desc h1 {
-  position: absolute;
-  font-size: 40px;
+  font-size: 2vw;
   margin-left: 7.5%;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
@@ -85,7 +119,7 @@
 }
 
 #desc h3 {
-  position: absolute;
+  font-size: 1vw;
   width: 45%;
   margin-left: 7.5%;
   animation: fadeInAnimation ease 2s;
@@ -94,11 +128,9 @@
 }
 
 #desc button {
-  position: absolute;
-  width: 25%;
+  width: 30vw;
   margin-left: 7.5%;
   height: 2.5rem;
-  top: 60%;
   background-color: #e0bc75; 
   color: white;
   border-color: #e0bc75;
@@ -314,7 +346,7 @@
 }
 
 #founded {
-  margin-left: 7.5rem;
+  margin-left: 5%;
   width: 45%;
   margin-top: -17%;
   margin-right: 5%;
@@ -358,6 +390,14 @@
 
 #fourPoints ul li {
   margin-bottom: 3vh;
+}
+
+#ourServices{
+  font-size: 20px;
+} 
+
+#ourServicesDesc {
+  font-size: 15px;
 }
 
 #services {
@@ -464,12 +504,26 @@
 
 #articles {
   margin: auto;
+  display: flex; 
+  width: 75%; 
+  justify-content: center; 
+  margin-bottom: 2.5vw;
 }
 
 #articles img {
   width: 25vw;
   margin: 1vw 1vw 0 1vw;
   border-radius: 5px;
+}
+
+#articles a {
+  margin-bottom: 10%;
+}
+
+#articles div p {
+  font-size: 1.5vw; 
+  color: #e0bc75; 
+  margin: 1vw;
 }
 
 .banner{
@@ -582,7 +636,7 @@
  #openNav {
   display: flex;
   position: sticky;
-  height: 10vh;
+  height: 10vw;
   top: 0;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.75);
@@ -590,12 +644,14 @@
  }
 
 #openNav a {
-  margin: 1.2rem;
+  margin: 3vw;
+  margin-left: 3vw;
 }
 
 #openNav i {
+  filter: brightness(0.5);
   font-size: 2vw;
-  margin: 0.60rem;
+  margin: 3.5vw;
 }
  
  #openNav button {
@@ -640,4 +696,212 @@
  #mySidebar button i{
   font-size: 3vw;
  }
+
+  #desc h1 {
+    font-size: 5vw;
+  }
+
+  #desc h3 {
+    font-size: 3vw;
+    width: 85%;
+  }
+
+  #desc button {
+    font-size: 2.5vw;
+    height: 10vw;
+  }
+
+  #digital {
+    top: 50vw;
+  }
+
+  #brand {
+    display: grid;
+  }
+
+  #brand-desc {
+    width: 90%;
+  }
+
+  #brand-desc img{
+    margin-top: 2.5%;
+  }
+
+  #brand-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #andrew {
+    width: 65%;
+  }
+
+  #andrew p {
+    font-size: 3vw;
+  }
+  
+  #built {
+    display: grid;
+    margin-top: 2vw;
+  }
+  
+  #built p {
+    padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+    line-height: 1.85rem;
+  }
+  
+  #built-desc {
+    width: 90%;
+    margin-left: 7.5%;
+  }
+  
+  #built-desc img{
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+  }
+  
+  #built-desc button {
+    width: 25%;
+    margin-top: 1rem; 
+    height: 2.5rem; 
+  }
+  
+  #built-image {
+    width: 90%;
+    margin-right: 7.5%;
+  }
+  
+  #built-image img{
+    width: 95%;
+  }
+  
+  #don {
+    width: 65%;
+    padding-left: 2rem;
+  }
+  
+  #don p {
+    font-size: 3vw;
+    padding: 0;
+    margin: 0 0 0.5rem;
+  }
+
+  #exp {
+    display: grid;
+  }
+
+  #exp {
+    display: grid;
+  }
+
+  #exp-desc {
+    width: 90%;
+  }
+
+  #exp-desc img{
+    margin-top: 2.5%;
+  }
+
+  #exp-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #homer {
+    width: 65%;
+  }
+
+  #homer p {
+    font-size: 3vw;
+  }
+
+  #founded h3 {
+    font-size: 4vw;
+  }
+
+  #founded p {
+    font-size: 1.85vw;
+  }
+
+  #fourPoints h4{
+    margin-left: 10%;
+    font-size: 5vw;
+  }
+
+  #fourPoints div ul li{
+    margin: 0 0 2.5vw 0;
+  }
+
+  #fourPoints div ul li p {
+    display: none;
+  }
+
+  #fourPoints li {
+    width: 10vw;
+  }
+
+  #services {
+    display: grid;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #services div{
+    width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #services div img {
+    width: 100%;
+  }
+
+  #services div button {
+    height: 10vw;
+  }
+
+  #articles {
+    display: grid;
+    width: 90%;
+  }
+
+  #articles div img {
+    width: 100%;
+  }
+
+  #articles div a p{
+    font-size: 3vw;
+  }
+  
+  .banner p:nth-child(1){
+    font-size: 4vw;
+    padding-top: 5%;
+    margin-bottom: 10px;
+  }
+  
+  .banner p:nth-child(2){
+    font-size: 4vw;
+  }
+
+  .last{
+    padding-top: 1vw;
+    display: block;
+    color: white;
+    border: 2px solid #333;
+    height: 1000px;
+    background-color: #333;
+    font-family: "Century Gothic",sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .last div{
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
 }
