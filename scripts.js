@@ -12,3 +12,25 @@ function openNav() {
     isClosed = true;
   }
 }
+
+var closeMes = true;
+
+function show() {
+  if (closeMes) {
+    document.getElementById("typing").style.display = "inline";
+    document.getElementById("message").style.display = "none";
+    closeMes = false;
+  } else {
+    document.getElementById("typing").style.display = "none";
+    document.getElementById("message").style.display = "inline";
+    closeMes = true;
+  }
+}
+
+function empty() {
+  var x = document.forms["form"]["text"].value;
+  var y = document.getElementById("text");
+  if (x.length == 0) {
+    y.classList.add("shake");
+  }
+}
