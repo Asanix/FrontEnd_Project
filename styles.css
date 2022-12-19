@@ -568,3 +568,33 @@
   margin-left: -2px;
   cursor: pointer;
 }
+
+#mySidebar {
+  display: none;
+}
+
+#openNav {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+ .topnav {
+  display: none;
+ }
+
+ #openNav {
+  display: grid;
+ }
+
+ #mySidebar {
+  position: sticky;
+  top: 0;
+  float: right;
+  height: 100vw;
+  width: 20vw;
+  margin-right: -20.5vw;
+  z-index: 999;
+  border: black solid;
+  transition: margin-right 5s;
+ }
+}
