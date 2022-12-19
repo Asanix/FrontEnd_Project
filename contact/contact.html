@@ -144,10 +144,10 @@ a{
     justify-content:space-evenly;
 }
 .clients h2{
-   font-size: 2.5rem;
-   text-align: center;
-   margin: 30px;
-   padding: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
 }
 .client1{
   margin-top: 20px;
@@ -311,8 +311,7 @@ a{
       <div class="input-control-check">
         <input type="checkbox" name="checkbox" id="checkbox" required> Subscribe to Newsletter
       </div><br>
-      <a href="https://mediaboom.com"><button type="submit" class="submit" name="save_client" >CONTACT US</button> </a>
-      <!--<button type="submit" class="submit" name="save_client" >CONTACT US</button>  -->
+      <button type="submit" class="submit" name="save_client" >CONTACT US</button>
     </form>
     </div>
     
@@ -370,9 +369,9 @@ a{
             <p>Digital advertising never rests, and neither do we. Receive exclusive insights on <br> 
                 what’s new, what’s hot, and what’s challenging the rules in digital advertising and <br>
                 marketing so you’re always the first to know.</p><br>
-                <form id="form">
+                <form id="form" onsubmit="onSubmit(event)" action="#">
                     <div class="input-control-e">
-                        <input id="email" name="emaill" type="email" placeholder="Enter your email" required>
+                        <input id="emaill" name="emaill" type="email" placeholder="Enter your email" required>
                     </div><br>
                     <button class="submitt" type="submit">RECEIVE INSIGHTS NOW</button>
                 </form>
@@ -414,6 +413,25 @@ a{
                 <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
             </div>
         </div>
-      
+    
+    <script>
+      function onSubmit(event){
+            let email = document.getElementById('emaill').value;
+            console.log(email);
+            
+            let data = event.target;
+            let formdata = new FormData(data);
+
+            let form_data_obj = Object.fromEntries(formdata);
+            console.log(form_data_obj);
+
+            localStorage.setItem('emaill',form_data_obj.email);
+            
+            event.preventDefault();
+        }
+        </script>
+    </script>
+
+
 </body>
 </html>

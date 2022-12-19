@@ -364,7 +364,7 @@ input{
             <p>Digital advertising never rests, and neither do we. Receive exclusive insights on <br> 
                 what’s new, what’s hot, and what’s challenging the rules in digital advertising and <br>
                 marketing so you’re always the first to know.</p><br>
-                <form id="form" method="post">
+                <form id="form" onsubmit="onSubmit(event)" action="#">
                     <div class="input-control">
                         <input id="email" name="email" type="email" placeholder="Enter your email" required>
                     </div><br>
@@ -410,6 +410,22 @@ input{
             </div>
         </div>
         
+        <script>
+        function onSubmit(event){
+            let email = document.getElementById('email').value
+            console.log(email);
+            
+            let data = event.target;
+            let formdata = new FormData(data);
+
+            let form_data_obj = Object.fromEntries(formdata);
+            console.log(form_data_obj);
+
+            localStorage.setItem('email',form_data_obj.email);
+            
+            event.preventDefault();
+        }
+        </script>
 
     </body>
 </html>
