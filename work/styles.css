@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: "Century Gothic",sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-weight: 300;
   color: white;
   scroll-behavior: smooth;
@@ -41,7 +41,7 @@
 }
 
 .moovingLink {
-  background: 
+  background:
     linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
     linear-gradient(to right, #e0bc75, #e0bc75);
   background-size: 100% 0.1em, 0 0.1em;
@@ -57,7 +57,7 @@
 }
 
 #choosenLink {
-  background: 
+  background:
     linear-gradient(to right, #e0bc75, #e0bc75),
     linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
   background-size: 100% 0.1em, 0 0.1em;
@@ -113,7 +113,7 @@
 
 #pages div {
   width: 100%;
-  height: 11.5vw; 
+  height: 11.5vw;
   overflow: hidden;
 }
 
@@ -145,7 +145,7 @@
   filter: brightness(0.75);
 }
 
-.banner{
+.banner {
   background: url(../banner.jpg);
   height: 270px;
   color: white;
@@ -156,19 +156,19 @@
   margin-top: 5%;
 }
 
-.banner p:nth-child(1){
+.banner p:nth-child(1) {
   font-size: 2vw;
   padding-top: 5%;
   padding-bottom: 1%;
   margin-bottom: -15px;
 }
 
-.banner p:nth-child(2){
+.banner p:nth-child(2) {
   font-size: 2vw;
   font-weight: bold;
 }
 
-.banner button{
+.banner button {
   font-weight: bold;
   color: white;
   font-size: 3vw;
@@ -179,19 +179,19 @@
   transition: 0.3s;
 }
 
-.banner button:hover{
+.banner button:hover {
   background: none;
   color: #f6ca78;
 }
 
-.last{
+.last {
   padding-top: 50px;
   display: flex;
   color: white;
   border: 2px solid #333;
   height: 400px;
   background-color: #333;
-  font-family: "Century Gothic",sans-serif;
+  font-family: "Century Gothic", sans-serif;
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
@@ -201,38 +201,38 @@
   color: white;
 }
 
-.last div:nth-child(1) img{
+.last div:nth-child(1) img {
   margin-bottom: 30px;
 }
 
-.last div{
+.last div {
   width: 25%;
 }
 
-.last .grey{
+.last .grey {
   opacity: 0.7;
 }
 
-.last a{
+.last a {
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
 
-.last .opa:hover{
+.last .opa:hover {
   opacity: 0.5;
 }
 
-.last .opa:focus{
+.last .opa:focus {
   color: rgb(114, 114, 250);
 }
 
-.last .logo{
+.last .logo {
   display: flex;
   margin-bottom: 30px;
 }
 
-.last .logo img{
+.last .logo img {
   width: 20px;
   height: 25px;
   margin-right: 20px;
@@ -249,133 +249,133 @@
 }
 
 @media only screen and (max-width: 1100px) {
- .topnav {
-  display: none;
- }
+  .topnav {
+    display: none;
+  }
 
- #openNav {
-  display: flex;
-  position: sticky;
-  height: 10vw;
-  top: 0;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.75);
-  z-index: 999;
- }
+  #openNav {
+    display: flex;
+    position: sticky;
+    height: 10vw;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 999;
+  }
 
-#openNav a img{
-  width: 25vw;
-}
+  #openNav a img {
+    width: 25vw;
+  }
 
-#openNav a {
-  margin: 3vw;
-  margin-left: 3vw;
-}
+  #openNav a {
+    margin: 3vw;
+    margin-left: 3vw;
+  }
 
-#openNav i {
-  filter: brightness(0.5);
-  font-size: 2vw;
-  margin: 3.5vw;
-}
- 
- #openNav button {
-  right: 0;
-  background: none;
-  border-style: none;
- }
+  #openNav i {
+    filter: brightness(0.5);
+    font-size: 2vw;
+    margin: 3.5vw;
+  }
 
- #mySidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  float: right;
-  height: 150vh;
-  overflow: hidden;
-  width: 20vw;
-  background-color: #333;
-  margin-right: -20.5vw;
-  z-index: 2000;
- }
+  #openNav button {
+    right: 0;
+    background: none;
+    border-style: none;
+  }
 
-#mySidebar a {
-  text-decoration: none;
-}
+  #mySidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: right;
+    height: 150vh;
+    overflow: hidden;
+    width: 20vw;
+    background-color: #333;
+    margin-right: -20.5vw;
+    z-index: 2000;
+  }
 
-#links {
-  position: absolute;
-  top: 30vh;
-}
+  #mySidebar a {
+    text-decoration: none;
+  }
 
- #mySidebar p {
-  font-size: 1.5vw;
-  margin: 2vw;
-  font-weight: bold;
-  text-decoration: none;
- }
+  #links {
+    position: absolute;
+    top: 30vh;
+  }
 
- #mySidebar button {
-  position: absolute;
-  height: 3vh;
-  width: 3vh;
-  top: 2vh;
-  margin-left: 12.5vw;
-  color: black;
-  position: relative;
-  border-style: none;
-  background: none;
- }
+  #mySidebar p {
+    font-size: 1.5vw;
+    margin: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
- #mySideBar i {
-  width: 1.5vw;
- }
+  #mySidebar button {
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    top: 2vh;
+    margin-left: 12.5vw;
+    color: black;
+    position: relative;
+    border-style: none;
+    background: none;
+  }
 
- #work {
-  font-size: 10vw
- }
+  #mySideBar i {
+    width: 1.5vw;
+  }
 
- #workDesc {
-  font-size: 3vw;
-  width: 70%;
- }
+  #work {
+    font-size: 10vw
+  }
 
- #category {
-  margin-top: 7vw;
-}
+  #workDesc {
+    font-size: 3vw;
+    width: 70%;
+  }
 
-#category p {
-  font-size: 2vw;
-}
+  #category {
+    margin-top: 7vw;
+  }
 
-#category p:hover {
-  cursor: pointer;
-}
-  
-.banner p:nth-child(1){
-  font-size: 4vw;
-  padding-top: 5vw;
-  margin-bottom: 10px;
-}
+  #category p {
+    font-size: 2vw;
+  }
 
-.banner p:nth-child(2){
-  font-size: 4vw;
-}
+  #category p:hover {
+    cursor: pointer;
+  }
 
-.last{
-  padding-top: 50px;
-  display: block;
-  color: white;
-  border: 2px solid #333;
-  height: 1000px;
-  background-color: #333;
-  font-family: "Century Gothic",sans-serif;
-  justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+  .banner p:nth-child(1) {
+    font-size: 4vw;
+    padding-top: 5vw;
+    margin-bottom: 10px;
+  }
 
-.last div{
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+  .banner p:nth-child(2) {
+    font-size: 4vw;
+  }
+
+  .last {
+    padding-top: 50px;
+    display: block;
+    color: white;
+    border: 2px solid #333;
+    height: 1000px;
+    background-color: #333;
+    font-family: "Century Gothic", sans-serif;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .last div {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
