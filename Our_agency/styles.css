@@ -325,8 +325,287 @@ body {
     margin-left: -2px;
     cursor: pointer;
 }
+#mySidebar {
+    display: none;
+  }
+  
+  #openNav {
+    display: none;
+  }
+  #message {
+    width: 60px;
+    position: fixed;
+    bottom: 36px;
+    left: 93%;
+    z-index: 5;
+}
 
-@media screen and (max-width: 1050px) {
+#message button {
+    background: url(../message.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #093587;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#message button:hover {
+    background: url(../pen.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#typing {
+    border-radius: 20px;
+    background-color: white;
+    position: fixed;
+    width: 350px;
+    height: 500px;
+    right: 4%;
+    bottom: 30px;
+    display: none;
+}
+
+#typing #hum {
+    height: 25%;
+    border-radius: 19px 19px 0px 0px;
+    background-color: #f6ca78;
+}
+
+#typing #hum div {
+    display: flex;
+}
+
+#typing #hum img {
+    width: 75px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+
+#typing #hum div p {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+#typing #hum div button {
+    margin-left: 60px;
+    height: 40px;
+    width: 40px;
+    margin-top: 45px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    transition: 0.3s;
+    padding-top: 4px;
+    padding-right: 7px;
+}
+
+#typing #hum div button:hover {
+    background: rgba(68, 68, 68, 0.559);
+}
+
+#typing #mes {
+    height: 55%;
+}
+
+#typing #mes div {
+    border-radius: 20px;
+    background-color: #4f4f4f20;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 250px;
+    height: 80px;
+}
+
+#typing #mes div p {
+    padding: 14px 5px 10px 15px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+}
+
+#typing #type {
+    height: 15%;
+    border-top: 2px solid rgba(128, 128, 128, 0.582);
+    border-radius: 0px 0px 19px 19px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+
+#typing #type input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+#typing #send {
+    width: 60px;
+    position: fixed;
+    bottom: 36px;
+    left: 93%;
+    z-index: 5;
+}
+
+#typing #send button {
+    background: url(../send.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #093587;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0px;
+}
+
+#typing #send button:hover {
+    border-radius: 35px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+form #text.shake {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+
+    0%,
+    100% {
+        margin-left: 0px;
+    }
+
+    20%,
+    80% {
+        margin-left: -5px;
+    }
+
+    40%,
+    60% {
+        margin-left: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 980px) {
+
+    .topnav {
+        display: none;
+    }
+      
+       #openNav {
+        display: flex;
+        position: sticky;
+        height: 10vw;
+        top: 0;
+        justify-content: space-between;
+        background-color: white;
+        z-index: 999;
+       }
+      
+      #openNav a img{
+        width: 25vw;
+      }
+      
+      #openNav a {
+        margin: 3vw;
+        margin-left: 3vw;
+      }
+      
+      #openNav i {
+        filter: brightness(0.5);
+        font-size: 2vw;
+        margin: 3.5vw;
+      }
+       
+       #openNav button {
+        right: 0;
+        background: none;
+        border-style: none;
+       }
+      
+       #mySidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        float: right;
+        height: 150vh;
+        overflow: hidden;
+        width: 20vw;
+        background-color: #333;
+        margin-right: -20.5vw;
+        z-index: 2000;
+       }
+      
+      #mySidebar a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      #links {
+        position: absolute;
+        top: 30vh;
+      }
+      
+       #mySidebar p {
+        font-size: 1.5vw;
+        margin: 2vw;
+        font-weight: bold;
+        text-decoration: none;
+       }
+      
+       #mySidebar button {
+        position: absolute;
+        height: 3vh;
+        width: 3vh;
+        top: 2vh;
+        margin-left: 12.5vw;
+        color: black;
+        position: relative;
+        border-style: none;
+        background: none;
+       }
+      
+       #mySideBar i {
+        width: 1.5vw;
+       }
+
     .photo .one{
         display: block;
     }
@@ -364,5 +643,24 @@ body {
         width: 100%;
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    .message {
+        width: 80px;
+        position: fixed;
+        bottom: 30px;
+        left: 80%;
+    }
+
+    .message button {
+        background: url(../message.png);
+        border-radius: 80px;
+        border: none;
+        background-color: #f8a900;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

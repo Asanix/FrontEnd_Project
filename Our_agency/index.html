@@ -3,9 +3,24 @@
     <title></title>
     <link rel="stylesheet" href="styles.css">
       <script src="scripts.js"></script>
+      <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
+        <div id="openNav">
+            <a href="../index.html"><img src="../logo-dark.png"></a>
+            <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="mySidebar">
+            <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+            <div id="links">
+                <a href=""><p>WORK</p></a>
+                <a href="../Industries/index.html"><p>INDUSTRIES</p></a>
+                <a href="../our_agency/index.html"><p>OUR AGENCY</p></a>
+                <a href="../services/index.html"><p>SERVICES</p></a>
+                <a href="../resources/resourses.html"><p>RESOURCES</p></a>
+                <a href="../contact/contact.php"><p>CONTACT</p></a>
+            </div>
+        </div>
         <div class="topnav">
             <a id="logo" href="../index.html"><img src="../logo-dark.png"></a>
             <a id="contact" href="">CONTACT</a>
@@ -199,6 +214,33 @@
                 <a class="opa" href="https://mediaboom.com/news/online-review-management/">Online Review Management – What It Is and Why You Need it </a>
              <a class="opa" href="https://mediaboom.com/news/luxury-hotel-social-media-marketing/">Top 10 Strategies for Luxury Hotel Social Media Marketing</a>
                 <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
+            </div>
+         </div>
+
+         <div id="message">
+            <button onclick="show()" id="but"></button>
+         </div>
+   
+         <div id="typing">
+            <div id="hum">
+               <div>
+                  <img src="../Our_agency/era.jpg" alt="">
+                  <p>Hi there!</p>
+                  <button onclick="show()">&#215;</button>
+               </div>
+            </div>
+            <div id="mes">
+               <div>
+                  <p>Welcome back! You can begin by asking your question below. Someone will be with you shortly.</p>
+               </div>
+            </div>
+            <div id="type">
+               <form name="form" id="form1">
+                  <input id="text" type="text" name="text" placeholder="Enter your message...">
+               </form>
+            </div>
+            <div id="send">
+               <button type="submit" id="send_but" onclick="empty()"></button>
             </div>
          </div>
 
