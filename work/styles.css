@@ -422,6 +422,31 @@ form #text.shake {
   animation: shake 0.3s ease-in-out;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  20%,
+  80% {
+    margin-left: -5px;
+  }
+  40%,
+  60% {
+    margin-left: 5px;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .topnav {
     display: none;
