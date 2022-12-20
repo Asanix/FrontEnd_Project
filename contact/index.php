@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -582,7 +586,6 @@ h1{
 
     <div class="topnav">
         <a id="contact" href="/contact/contact.html">CONTACT</a>
-        <a href="" class="moovingLink">INSIGHT</a>
         <a href="/resources/resourses.html" class="moovingLink">RESOURCES</a>
         <a href="/services/index.html" class="moovingLink">SERVICES</a>
         <a href="/our_agency/index.html" class="moovingLink">OUR AGENCY</a>
