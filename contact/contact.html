@@ -301,6 +301,7 @@ a{
 }
 
 #typing {
+    border: 2px solid black;
     border-radius: 20px;
     background-color: white;
     position: fixed;
@@ -450,7 +451,6 @@ form #text.shake {
     margin-left: 5px;
 }
 }
-
 @media screen and (max-width: 980px) {
   .topnav {
   display: none;
@@ -572,7 +572,25 @@ h1{
         margin-bottom: 40px;
     }
 }
+.message {
+        width: 80px;
+        position: fixed;
+        bottom: 30px;
+        left: 80%;
+    }
 
+    .message button {
+        background: url(../message.png);
+        border-radius: 80px;
+        border: none;
+        background-color: #f8a900;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
 </style>
 <body>
@@ -791,8 +809,7 @@ function show(){
   }
 }
 
-
-function empty(){ 
+  function empty(){ 
     var x=document.forms["form"]["text"].value;
     var y = document.getElementById("text");
     if (x.length==0){
@@ -800,7 +817,7 @@ function empty(){
     }
   }
         </script>
-    </script>
+
 
 
 </body>
