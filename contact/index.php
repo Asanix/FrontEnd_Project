@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,64 +9,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index</title>
+  <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+
 </head>
 <style>
 *{
     font-family:"Century Gothic",sans-serif;
     margin: 0;
 }
-.navbar{
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width:100%;
-    height:5.313rem;
-}
-.navbar .container{
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left:0.625rem;
-    padding-left: 0.375rem;
-}
-.navbar-menu li{
-    list-style-type:none;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-.navbar-menu li{
-    display: inline-block;
-
-}
-.navbar-menu li a{
-    display: inline-block;
-    color: #000;
-    font-weight: 700;
-    opacity: 0.8;
-    text-decoration: none;
-    padding:0.625rem;
-
-}
-.navbar-menu li a:hover{
-    color:#e0bc75;
-    text-decoration:underline;
-    opacity: 1;
-    transition: all .07s  ease-in-out;
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
 }
 
-.navbar-wrap{
-    display: flex;
-    flex-flow:row nowrap;
+.topnav a {
+  margin: 1.20rem 0.5rem;
+  padding: 0.6rem 0.9rem;
+  float: right;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: black;
 }
-.contact{
-    margin-left:0.625rem;
-    padding: 0.625rem;
-    background-color:#e0bc75;
-    color:#000;
-    font-weight: 600;
-    text-decoration: none;
-    margin-right: 1.875rem;
+
+.moovingLink {
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, #e0bc75, #e0bc75);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 400ms;
+}
+
+.moovingLink:hover,
+.moovingLink:focus {
+  color: #e0bc75;
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+#logo {
+  margin: 0.60rem;
+  float: left;
+}
+
+#contact {
+  background: #e0bc75;
+  margin-right: 1.4rem;
+  transition: 400ms;
+}
+
+#contact:hover {
+  color: white;
+}
+
+#mySidebar {
+    display: none;
+}
+
+#openNav {
+    display: none;
 }
 .first{
     margin: 8vw;
@@ -232,33 +242,373 @@ h1{
 .last div:nth-child(4) a{
     color: white;
 }
+#message {
+    width: 60px;
+    position: fixed;
+    bottom: 36px;
+    left: 93%;
+    z-index: 5;
+}
+
+#message button {
+    background: url(../message.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #093587;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#message button:hover {
+    background: url(../pen.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#typing {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    position: fixed;
+    width: 350px;
+    height: 500px;
+    right: 4%;
+    bottom: 30px;
+    display: none;
+}
+
+#typing #hum {
+    height: 25%;
+    border-radius: 19px 19px 0px 0px;
+    background-color: #f6ca78;
+}
+
+#typing #hum div {
+    display: flex;
+}
+
+#typing #hum img {
+    width: 75px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+
+#typing #hum div p {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+#typing #hum div button {
+    margin-left: 60px;
+    height: 40px;
+    width: 40px;
+    margin-top: 45px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    transition: 0.3s;
+    padding-top: 4px;
+    padding-right: 7px;
+}
+
+#typing #hum div button:hover {
+    background: rgba(68, 68, 68, 0.559);
+}
+
+#typing #mes {
+    height: 55%;
+}
+
+#typing #mes div {
+    border-radius: 20px;
+    background-color: #4f4f4f20;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 250px;
+    height: 80px;
+}
+
+#typing #mes div p {
+    padding: 14px 5px 10px 15px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+}
+
+#typing #type {
+    height: 15%;
+    border-top: 2px solid rgba(128, 128, 128, 0.582);
+    border-radius: 0px 0px 19px 19px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+
+#typing #type input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+#typing #send {
+    width: 60px;
+    position: fixed;
+    bottom: 36px;
+    left: 93%;
+    z-index: 5;
+}
+
+#typing #send button {
+    background: url(../send.png);
+    border-radius: 35px;
+    border: none;
+    background-color: #093587;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0px;
+}
+
+#typing #send button:hover {
+    border-radius: 35px;
+    border: none;
+    background-color: #f8a900;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+form #text.shake {
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+
+0%,
+100% {
+    margin-left: 0px;
+}
+
+20%,
+80% {
+    margin-left: -5px;
+}
+
+40%,
+60% {
+    margin-left: 5px;
+}
+}
+
+@media screen and (max-width: 980px) {
+  .block{
+  display: inline;
+  text-align: center;
+}
+.subfooter{
+display: none;
+}
+
+.blockss{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+  display: flex;
+  
+}
+h1{
+  padding-top: 70px;
+}
+.topnav {
+  display: none;
+ }
+
+ #openNav {
+  display: flex;
+  position: sticky;
+  height: 10vw;
+  top: 0;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 999;
+ }
+
+#openNav a img{
+  width: 25vw;
+}
+
+#openNav a {
+  color:white;
+  margin: 3vw;
+  margin-left: 3vw;
+}
+
+#openNav p{
+    color: white;
+}
+
+#openNav i {
+  filter: brightness(0.5);
+  font-size: 2vw;
+  margin: 3.5vw;
+}
+ 
+ #openNav button {
+  right: 0;
+  background: none;
+  border-style: none;
+ }
+
+ #mySidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+  height: 150vh;
+  overflow: hidden;
+  width: 20vw;
+  background-color: #333;
+  margin-right: -20.5vw;
+  z-index: 2000;
+  transition: margin-right 5s;
+ }
+
+#mySidebar a {
+  text-decoration: none;
+}
+
+#links {
+  position: absolute;
+  top: 30vh;
+}
+
+ #mySidebar p {
+  font-size: 1.5vw;
+  margin: 2vw;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+ #mySidebar button {
+  position: absolute;
+  height: 3vh;
+  width: 3vh;
+  top: 2vh;
+  margin-left: 12.5vw;
+  color: black;
+  position: relative;
+  border-style: none;
+  background: none;
+ }
+
+ #mySideBar i {
+  width: 1.5vw;
+ }
+
+
+
+
+.last{
+        padding-top: 50px;
+        display: block;
+        color: white;
+        border: 2px solid #333;
+        height: 1000px;
+        background-color: #333;
+        font-family: "Century Gothic",sans-serif;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .last div{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.message {
+        width: 80px;
+        position: fixed;
+        bottom: 30px;
+        left: 80%;
+    }
+
+    .message button {
+        background: url(../message.png);
+        border-radius: 80px;
+        border: none;
+        background-color: #f8a900;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
 </style>
 
 <body>
 
-<header>
-<div class="navbar">
-    
-    <div class="container">
-    
-        <img src ="logo-dark.png" alt="...">
-        
-        <div class="navbar-wrap">
-            <ul class="navbar-menu">
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">INDUSTRIES</a></li>
-                <li><a href="#">OUR AGENCY</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">RESOURCES</a></li>
-                <li><a href="#">INSIGHTS</a></li>
-                <a href="#" class="contact">CONTACT</a>
-            </ul>
-            
-            </div>
-        </div>
+    <div class="topnav">
+        <a id="contact" href="/contact/contact.html">CONTACT</a>
+        <a href="/resources/resourses.html" class="moovingLink">RESOURCES</a>
+        <a href="/services/index.html" class="moovingLink">SERVICES</a>
+        <a href="/our_agency/index.html" class="moovingLink">OUR AGENCY</a>
+        <a href="/Industries/index.html" class="moovingLink">INDUSTRIES</a>
+        <a href="/work/index.html" class="moovingLink">WORK</a>
+        <a id="logo" href="#"><img src="logo-dark.png"></a>
+    </div>
+
+    <div id="openNav">
+    <a href="../index.html"><img src="../logo-dark.png"></a>
+    <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
 </div>
-</header>
+<div id="mySidebar">
+    <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+    <div id="links">
+        <a href=""><p>WORK</p></a>
+        <a href="../Industries/index.html"><p>INDUSTRIES</p></a>
+        <a href="../our_agency/index.html"><p>OUR AGENCY</p></a>
+        <a href="../services/index.html"><p>SERVICES</p></a>
+        <a href="../resources/resourses.html"><p>RESOURCES</p></a>
+        <a href="../contact/contact.php"><p>CONTACT</p></a>
+    </div>
+</div>
 
 <div class="main">
     <div class="first">
@@ -327,10 +677,57 @@ h1{
                 <p class="grey"><a class="opa" href="https://mediaboom.com/privacy-policy">Privacy Policy</a></p>
             </div>
         </div>
+
+        <div id="message">
+            <button onclick="show()" id="but"></button>
+         </div>
+   
+         <div id="typing">
+            <div id="hum">
+               <div>
+                  <img src="../Our_agency/era.jpg" alt="">
+                  <p>Hi there!</p>
+                  <button onclick="show()">&#215;</button>
+               </div>
+            </div>
+            <div id="mes">
+               <div>
+                  <p>Welcome back! You can begin by asking your question below. Someone will be with you shortly.</p>
+               </div>
+            </div>
+            <div id="type">
+               <form name="form" id="form1">
+                  <input id="text" type="text" name="text" placeholder="Enter your message...">
+               </form>
+            </div>
+            <div id="send">
+               <button type="submit" id="send_but" onclick="empty()"></button>
+            </div>
+         </div>
+
+         <script>
+            var closeMes = true;
+
+function show(){
+  if (closeMes) {
+    document.getElementById("typing").style.display = "inline";
+    document.getElementById("message").style.display = "none";
+    closeMes = false;
+  }else{
+    document.getElementById("typing").style.display = "none";
+    document.getElementById("message").style.display = "inline";
+    closeMes = true;
+  }
+}
+
+  function empty(){ 
+    var x=document.forms["form"]["text"].value;
+    var y = document.getElementById("text");
+    if (x.length==0){
+        y.classList.add("shake");
+    }
+  }
+         </script>
         
-    
-
-
-
 </body>
 </html>
