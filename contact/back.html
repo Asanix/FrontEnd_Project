@@ -1,15 +1,13 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>index</title>
   <script src="https://kit.fontawesome.com/5a0b3efb01.js" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
+
 </head>
 <style>
 *{
@@ -93,128 +91,106 @@ h1{
     padding-left: 1.25rem;
     border-left:0.125rem solid #e0bc75;
     color:#adadad;
-    font-size: 2.3vh;
+    font-size: 2.5vh;
 }
-.contact-form{
-  width:calc(100%-20px);
-  max-width: 500px;
-  background-color: #e0bc75;
-  padding: 50px 40px;
+.gold{
+    border:solid #e0bc75;
+    border-width:0.063rem;
+    height: 0;
 }
-.input-control{
-  margin-bottom:12px;
-  position: relative;
+.story{
+    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.story p:nth-child(1){
+    font-family: "Century Gothic",sans-serif;
+    font-size: 40px;
+    color: #f3b543;
+    margin-bottom: 0px;
+}
+.story p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+    font-size: 16px;
+    letter-spacing: 2;
+    margin-bottom: 60px;
+}
+.story .pic p:nth-child(1){
+    font-family: "Century Gothic",sans-serif;
+    color: #f3b543;
+    font-size: 40px;
+}
+.story .pic p:nth-child(2){
+    font-family: "Century Gothic",sans-serif;
+    font-size: 18px;
+    letter-spacing: 2;
 }
 
-.input-control input{
-  width: 80%;
-  height: 50px;
-  border:none;
-  background-color: white;
-}
-.submit{
-  width: 150px;
-  height: 50px;
-  background-color: #333;
-  color: white;
-  border: none;
-}
-.block{
-  display: flex;
-  justify-content:space-evenly;
-
-}
-.contact-info{
-  background-color: #bab2b2;
-  border: 20px solid black;
-  width:calc(100%-20px);
-  max-width: 500px;
-  padding: 50px 40px;
-}
-a{
-  text-decoration: none;
-  color: #e0bc75;
-}
-.clients{
-    background-color: #f8f8f8;
-    margin-top: 5rem;
-    font-weight: 300;
-    padding: 15px;
-    font-style: italic;
-    font-family: georgia,serif;
-    height: 350px;
-}
-.blockss{
+.picture{
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-.clients h2{
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 30px;
-  padding: 20px;
-}
-.client1{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-.client2{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-evenly;
-}
-.img1{
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-}
-.img2{
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-}
-.fblock{
-  font-weight: 600;
-  font-family: georgia,serif;
-}
-.sblock{
-  font-weight: 600;
-  font-family: georgia,serif;
+.picture .pic{
+    width: 40%;
+    height: 300px;
+    cursor: pointer;
 }
 
-.subfooter{
-    position:relative;
-    text-align:center;
-    color:black;
-    width: 100%;
-    height: 400px;
+.picture .pic:nth-child(1){
+    background: url(../pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.sub{
-    width: 100%;
-    height: 400px;
+.picture .pic .overlay{
+    text-align: left;
+    margin: 10px;
+    padding: 5% 3%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
 }
-.text-c{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.picture .pic .overlay:hover{
+    margin: 0px;
+    padding: 7.3% 5%;
 }
-
-.input-control-e input{
-    height: 40px;
-    width: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.67);
-
+.picture .pic:nth-child(2){
+    background: url(../pic2.jpg);
 }
-.submitt{
-    height: 50px;
-    width: 400px;
-    background-color: #333;
+.picture .pic div p:nth-child(1){
     color: white;
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
+}
+.picture .pic div p:nth-child(2){
+    color: white;
+    font-size: 24px;
+    font-family: georgia,serif;
+    font-style: italic;
+}
+.picture .pic div p:nth-child(3){
+    color: #f3b543;
+    font-size: 20px;
+    font-family: "Century Gothic",sans-serif;
+}
+.story a button{
+    margin-top: 40px;
+    border: 2px solid #f3b543;
+    background: none;
+    font-family: "Century Gothic",sans-serif;
+    color: #f3b543;
+    font-size: 16px;
+    height: 40px;
+    padding: 8 18;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.story a button:hover{
+    opacity: 0.8;
+}
+.story a button:focus{
+    color: rgb(118, 118, 249);
 }
 .last{
     padding-top: 50px;
@@ -301,6 +277,7 @@ a{
 }
 
 #typing {
+    border: 2px solid black;
     border-radius: 20px;
     background-color: white;
     position: fixed;
@@ -452,7 +429,26 @@ form #text.shake {
 }
 
 @media screen and (max-width: 980px) {
-  .topnav {
+  .block{
+  display: inline;
+  text-align: center;
+}
+.subfooter{
+display: none;
+}
+
+.blockss{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+  display: flex;
+  
+}
+h1{
+  padding-top: 70px;
+}
+.topnav {
   display: none;
  }
 
@@ -471,8 +467,13 @@ form #text.shake {
 }
 
 #openNav a {
+  color:white;
   margin: 3vw;
   margin-left: 3vw;
+}
+
+#openNav p{
+    color: white;
 }
 
 #openNav i {
@@ -535,25 +536,7 @@ form #text.shake {
 
 
 
-  .block{
-  display: inline;
-  text-align: center;
-}
-.subfooter{
-display: none;
-}
 
-.blockss{
-    display: flex;
-    flex-direction: column;
-}
-.navbar{
-  display: flex;
-  
-}
-h1{
-  padding-top: 70px;
-}
 .last{
         padding-top: 50px;
         display: block;
@@ -573,132 +556,90 @@ h1{
     }
 }
 
+.message {
+        width: 80px;
+        position: fixed;
+        bottom: 30px;
+        left: 80%;
+    }
+
+    .message button {
+        background: url(../message.png);
+        border-radius: 80px;
+        border: none;
+        background-color: #f8a900;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
 </style>
-<body>
-  <div class="topnav">
-    <a id="contact" href="/contact/contact.html">CONTACT</a>
-    <a href="" class="moovingLink">INSIGHT</a>
-    <a href="/resources/resourses.html" class="moovingLink">RESOURCES</a>
-    <a href="/services/index.html" class="moovingLink">SERVICES</a>
-    <a href="/our_agency/index.html" class="moovingLink">OUR AGENCY</a>
-    <a href="/Industries/index.html" class="moovingLink">INDUSTRIES</a>
-    <a href="/work/index.html" class="moovingLink">WORK</a>
-    <a id="logo" href="#"><img src="logo-dark.png"></a>
-</div>
 
-<div id="openNav">
-<a href="../index.html"><img src="../logo-dark.png"></a>
-<button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+<body>
+
+    <div class="topnav">
+        <a id="contact" href="/contact/contact.html">CONTACT</a>
+        <a href="" class="moovingLink">INSIGHT</a>
+        <a href="/resources/resourses.html" class="moovingLink">RESOURCES</a>
+        <a href="/services/index.html" class="moovingLink">SERVICES</a>
+        <a href="/our_agency/index.html" class="moovingLink">OUR AGENCY</a>
+        <a href="/Industries/index.html" class="moovingLink">INDUSTRIES</a>
+        <a href="/work/index.html" class="moovingLink">WORK</a>
+        <a id="logo" href="#"><img src="logo-dark.png"></a>
+    </div>
+
+    <div id="openNav">
+    <a href="../index.html"><img src="../logo-dark.png"></a>
+    <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
 </div>
 <div id="mySidebar">
-<button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
-<div id="links">
-    <a href=""><p>WORK</p></a>
-    <a href="../Industries/index.html"><p>INDUSTRIES</p></a>
-    <a href="../our_agency/index.html"><p>OUR AGENCY</p></a>
-    <a href="../services/index.html"><p>SERVICES</p></a>
-    <a href="../resources/resourses.html"><p>RESOURCES</p></a>
-    <a href="../contact/contact.php"><p>CONTACT</p></a>
-</div>
+    <button onclick="openNav()"><i class="fa-solid fa-xmark"></i></button>
+    <div id="links">
+        <a href=""><p>WORK</p></a>
+        <a href="../Industries/index.html"><p>INDUSTRIES</p></a>
+        <a href="../our_agency/index.html"><p>OUR AGENCY</p></a>
+        <a href="../services/index.html"><p>SERVICES</p></a>
+        <a href="../resources/resourses.html"><p>RESOURCES</p></a>
+        <a href="../contact/contact.php"><p>CONTACT</p></a>
+    </div>
 </div>
 
 <div class="main">
     <div class="first">
-        <h1>Get Results. Contact Us Today:</h1>
-        <p class="subpage">Your brand’s success matters to us. Contact us to find out how our digital <br>
-        experts can help you take your brand to the next level.
+        <h1>Thank You</h1>
+        <p class="subpage">Your message has been sent and you can expect us to get back to you <br>
+        soon. We appreciate you contacting us and look forward to the<br>
+        opportunity of working together.
         </p>
     </div>
-</div>
-
-<div class="block">
-    <div class="form">
-        <form method="POST" action="client.php" class="contact-form">
-        <h2>Fill out the form below to get started:</h2><br>
-      <div class="input-control">
-        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>  
-      </div><br>
-      <div class="input-control">
-        <input type="email" name="email" id="email" placeholder="Email Address" required>
-      </div><br>
-      <div class="input-control">
-      <input type="number" name="phone" id="phone" placeholder="Phone" required>
-      </div><br>
-      <div class="input-control">
-        <input type="textarea" name="message" id="message" placeholder="Message" required>
-      </div><br>
-      <div class="input-control-check">
-        <input type="checkbox" name="checkbox" id="checkbox" required> Subscribe to Newsletter
-      </div><br>
-      <button type="submit" class="submit" name="save_client" >CONTACT US</button>
-    </form>
-    </div>
-    
-    <div class="conatact-info">
-    <h2>General Inquiries</h2><br>
-    <p>Have a question… or just want to say hello? Get in touch:</p><br>
-    <a href="info@mediaboom.com" style="color:#e0bc75" ">INFO@MEDIABOOM.COM</a><br>
-    <a href="tel:+18007103975" style="color: #e0bc75;">800.710.3975</a><br><br>
-    
-    <h2>Our Location</h2>
-    <p>73 Church St</p><br>
-    <p>Guilford, CT 06437</p><br>
-    <a href="https://www.google.com/maps" style="color:#e0bc75">GET DIRECTIONS></a><br><br>
-    
-    <h2>Mediaboom Newsletter</h2>
-    <p>Exclusive digital marketing & advertising insights</p><br>
-    <a href="https://mediaboom.com/newsletter-signup/" style="color:#e0bc75">SIGN UP HERE</a>
-
-    </div>
-  </div>
-
-    <div class="clients">
-      <h2>What Our Clients Say</h2>
-    <div class="blockss">
-    <div class="flocks">
-        <div class="fblock">
-          <p>“I have worked with Mediaboom on several projects and <br> 
-          had nothing but stellar experiences!”</p>
-        </div>
-        <div class="client1">
-        <img src="homer-liwag-color.png" alt="" class="img1">
-          <p><strong> HOMER LIWAG</strong><br>
-          Creative Director, Copperfield Design</p>
-        </div>
-      </div>
-      
-      <div class="slocks">
-        <div class="sblock">
-          <p>“I could not have asked for a more talented, creative <br>
-          and patient partner for our website & branding project.”</p>
-        </div>
-        <div class="client2">
-          <img src="Joanna-Sherriff_03.png" alt="" class="img2">
-          <p><strong>JOANNA SHERRIFF</strong><br>
-          Director of Corporate Sales at Elegant Banquets </p>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-    <div class="subfooter">
-        <img class="sub" src="newsletter-bg.jpg" alt="...">
-        <div class="text-c">
-        <h2 style="font-style:italic;">Subscribe To Mediaboom's Newsletter</h2><br>
-            <p>Digital advertising never rests, and neither do we. Receive exclusive insights on <br> 
-                what’s new, what’s hot, and what’s challenging the rules in digital advertising and <br>
-                marketing so you’re always the first to know.</p><br>
-                <form id="form" onsubmit="onSubmit(event)" action="#">
-                    <div class="input-control-e">
-                        <input id="emaill" name="emaill" type="email" placeholder="Enter your email" required>
-                    </div><br>
-                    <button class="submitt" type="submit">RECEIVE INSIGHTS NOW</button>
-                </form>
+    <div class="line"><hr class="gold"></div>
+    <div class="story">
+            <p>PICTURES THAT TELL A STORY</p>
+            <p>LET THESE SAMPLES OF OUR RECENT WORK SPARK IDEAS OF WHAT WE COULD CREATE FOR YOUR BRAND.</p>
+            <div class="picture">
+                <div class="pic">
+                    <div class="overlay"><p>MUSHA CAY</p>
+                        <p>Web Design & Development | 3D Animation</p>
+                        <p>SEE CASE STUDY</p>
+                    </div>
+                </div>
+                <div class="pic">
+                    <div class="overlay">
+                        <p>JW MARRIOTT</p>
+                        <p>Web Design & Development | Print</p>
+                        <p>SEE CASE STUDY</p>
+                    </div>     
+                </div>
             </div>
-    </div>
-    </div>
-    <div class="last">
+            <a href="../work/index.html">
+                <button class="work">SEE ALL CASE STUDIES</button>
+            </a>
+        </div>
+        
+        <div class="last">
             <div>
                 <img src="../mediaboom.png">
                 <p class="grey">Mediaboom <br>
@@ -735,49 +676,34 @@ h1{
         </div>
 
         <div id="message">
-          <button onclick="show()" id="but"></button>
-       </div>
- 
-       <div id="typing">
-          <div id="hum">
-             <div>
-                <img src="../Our_agency/era.jpg" alt="">
-                <p>Hi there!</p>
-                <button onclick="show()">&#215;</button>
-             </div>
-          </div>
-          <div id="mes">
-             <div>
-                <p>Welcome back! You can begin by asking your question below. Someone will be with you shortly.</p>
-             </div>
-          </div>
-          <div id="type">
-             <form name="form" id="form1">
-                <input id="text" type="text" name="text" placeholder="Enter your message...">
-             </form>
-          </div>
-          <div id="send">
-             <button type="submit" id="send_but" onclick="empty()"></button>
-          </div>
-       </div>
-    
-    <script>
-      function onSubmit(event){
-            let email = document.getElementById('emaill').value;
-            console.log(email);
-            
-            let data = event.target;
-            let formdata = new FormData(data);
+            <button onclick="show()" id="but"></button>
+         </div>
+   
+         <div id="typing">
+            <div id="hum">
+               <div>
+                  <img src="../Our_agency/era.jpg" alt="">
+                  <p>Hi there!</p>
+                  <button onclick="show()">&#215;</button>
+               </div>
+            </div>
+            <div id="mes">
+               <div>
+                  <p>Welcome back! You can begin by asking your question below. Someone will be with you shortly.</p>
+               </div>
+            </div>
+            <div id="type">
+               <form name="form" id="form1">
+                  <input id="text" type="text" name="text" placeholder="Enter your message...">
+               </form>
+            </div>
+            <div id="send">
+               <button type="submit" id="send_but" onclick="empty()"></button>
+            </div>
+         </div>
 
-            let form_data_obj = Object.fromEntries(formdata);
-            console.log(form_data_obj);
-
-            localStorage.setItem('emaill',form_data_obj.email);
-            
-            event.preventDefault();
-        }
-
-        var closeMes = true;
+         <script>
+            var closeMes = true;
 
 function show(){
   if (closeMes) {
@@ -791,17 +717,14 @@ function show(){
   }
 }
 
-
-function empty(){ 
+  function empty(){ 
     var x=document.forms["form"]["text"].value;
     var y = document.getElementById("text");
     if (x.length==0){
         y.classList.add("shake");
     }
   }
-        </script>
-    </script>
-
-
+         </script>
+        
 </body>
 </html>
