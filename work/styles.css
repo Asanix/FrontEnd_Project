@@ -171,7 +171,7 @@
 .banner button {
   font-weight: bold;
   color: white;
-  font-size: 3vw;
+  font-size: 1vw;
   border: 3px solid #f6ca78;
   padding: 10px;
   background-color: #f6ca78;
@@ -547,6 +547,10 @@ form #text.shake {
 
   #category p:hover {
     cursor: pointer;
+  }
+
+  .banner button {
+    font-size: 3vw;
   }
 
   .banner p:nth-child(1) {
