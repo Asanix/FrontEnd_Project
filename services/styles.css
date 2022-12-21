@@ -730,9 +730,8 @@ form #text.shake {
         width: 90%;
         height: 250px;
         background-color: rgba(0, 0, 0, 0.7);
-        transition: 0.3s;
+        transition: 0.3s;  
     }
-
     .picture .pic .overlay:hover {
         transform: scale(1.04);
     }
